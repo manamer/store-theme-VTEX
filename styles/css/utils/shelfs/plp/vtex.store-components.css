@@ -1,0 +1,8 @@
+.skuSelectorSubcontainer,
+.skuSelectorContainer {
+  margin: 0;
+}
+
+.skuSelectorOptionsList {
+  justify-content: center;
+}

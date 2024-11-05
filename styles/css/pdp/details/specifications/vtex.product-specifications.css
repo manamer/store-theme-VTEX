@@ -1,0 +1,17 @@
+.specificationName,
+.specificationValue {
+  font-size: 0.9rem;
+
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+}
+.specificationName::before {
+  content: "●";
+  margin-right: 10px;
+  font-size: 0.75rem;
+}
+.specificationName::after {
+  content: ":";
+  margin-left: 3px;
+}

@@ -1,0 +1,98 @@
+.searchResultContainer {
+  max-width: unset;
+  padding: 0;
+}
+
+/* FILTER */
+.filter__container {
+  border-color: #d9d9d9;
+}
+
+.filter__container--title {
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 8px 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.filter__container--title .filterMessage {
+  margin: 0;
+  text-transform: uppercase;
+}
+.filter__container--title::after {
+  content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxMSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIuMDM0NDggMTAuNDcxM1YzLjM0NDg0TTIuMDM0NDggMC41Mjg3NDhWMS4xMDM0Nk0yLjAzNDQ4IDEuMTAzNDZDMS40NjMxNSAxLjEwMzQ2IDEgMS41NjY2MSAxIDIuMTM3OTRDMSAyLjcwOTI3IDEuNDYzMTUgMy4xNzI0MyAyLjAzNDQ4IDMuMTcyNDNDMi42MDU4MSAzLjE3MjQzIDMuMDY4OTcgMi43MDkyNyAzLjA2ODk3IDIuMTM3OTRDMy4wNjg5NyAxLjU2NjYxIDIuNjA1ODEgMS4xMDM0NiAyLjAzNDQ4IDEuMTAzNDZaTTkuMzkwOCAxMC40NzEzVjUuMTgzOTJNOS4zOTA4IDAuNTI4NzQ4VjIuOTQyNTRNOS4zOTA4IDIuOTQyNTRDOC44MTk0OCAyLjk0MjU0IDguMzU2MzIgMy40MDU2OSA4LjM1NjMyIDMuOTc3MDJDOC4zNTYzMiA0LjU0ODM1IDguODE5NDggNS4wMTE1MSA5LjM5MDggNS4wMTE1MUM5Ljk2MjEzIDUuMDExNTEgMTAuNDI1MyA0LjU0ODM1IDEwLjQyNTMgMy45NzcwMkMxMC40MjUzIDMuNDA1NjkgOS45NjIxMyAyLjk0MjU0IDkuMzkwOCAyLjk0MjU0Wk01LjcxMjY0IDAuNTI4NzQ4VjYuOTY1NTNNNS43MTI2NCAxMC40NzEzVjkuMjA2OTFNNS43MTI2NCA5LjIwNjkxQzYuMjgzOTcgOS4yMDY5MSA2Ljc0NzEzIDguNzQzNzUgNi43NDcxMyA4LjE3MjQzQzYuNzQ3MTMgNy42MDExIDYuMjgzOTcgNy4xMzc5NCA1LjcxMjY0IDcuMTM3OTRDNS4xNDEzMSA3LjEzNzk0IDQuNjc4MTYgNy42MDExIDQuNjc4MTYgOC4xNzI0M0M0LjY3ODE2IDguNzQzNzUgNS4xNDEzMSA5LjIwNjkxIDUuNzEyNjQgOS4yMDY5MVoiIHN0cm9rZT0iIzIxMjUyOSIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+Cjwvc3ZnPgo=");
+}
+
+.filterTitle,
+.filterTitle .filterIcon {
+  font-weight: bold;
+}
+
+.filterItem :global(.vtex-checkbox__line-container) {
+  align-items: center;
+}
+.filterPopupButton {
+  height: auto;
+  padding: 0;
+  align-items: center;
+  column-gap: 10px;
+}
+
+/* ORDER BY */
+.orderByText,
+.filterPopupArrowIcon .caretIcon {
+  color: #6c757d;
+}
+.filterPopupArrowIcon {
+  padding: 0;
+}
+.orderByButton {
+  padding: 10px 20px;
+  border: 1px solid #6c757d;
+  border-radius: 100px;
+  column-gap: 15px;
+}
+
+.filter__container--category-4 .filterTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter__container--category-4 .filterTitle::before {
+  content: "Línea de productos";
+}
+.filter__container--category-4 .filterTitleSpan {
+  display: none;
+}
+
+/* GALLERY */
+.gallery {
+  padding-top: 15px;
+}
+
+/********** MOBILE  */
+.orderByButton--mobile .filterPopupTitle--mobile {
+  display: none;
+}
+.orderByButton--mobile::before {
+  content: "ORDENAR POR:";
+}
+
+.orderByButton--mobile {
+  border: none;
+  padding: 0;
+}
+
+.filtersWrapperMobile--mobile .filterPopupTitle--mobile,
+.filterPopupArrowIcon--mobile .caretIcon {
+  color: black;
+}
+.filterPopupArrowIcon--mobile .caretIcon {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+}

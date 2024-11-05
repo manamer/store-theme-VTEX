@@ -1,0 +1,25 @@
+.flexRow--footer-menu {
+  background-color: #fafafa;
+  padding: 40px 20px;
+  padding-bottom: 0;
+}
+.flexRow--footer-menu-bottom {
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* MMOBILE */
+.flexRow--footer-menu-mobile {
+  padding: 20px 10px;
+}
+
+.flexRow--footer-menu-mobile :global(.vtex-flex-layout-0-x-flexRow--full-line) {
+  margin: 10px 0;
+  border-color: #e2e8f0;
+}
+
+/* DISCLOSURE */
+.flexColChild--footer-menu-disclosure {
+  border-bottom: 1px solid #fd187c;
+}

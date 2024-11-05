@@ -1,0 +1,9 @@
+.nameContainer--shelf-plp .productBrand {
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .nameContainer--shelf-plp .productBrand {
+    font-size: 0.9rem;
+  }
+}

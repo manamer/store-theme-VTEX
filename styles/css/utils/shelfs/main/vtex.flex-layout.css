@@ -1,0 +1,17 @@
+.flexRow--shelf-main-addtocart {
+  margin: 0;
+}
+.flexRow--shelf-main-addtocart :global(.vtex-button) {
+  background-color: transparent;
+  border: none;
+  color: #3c3c3c;
+}
+
+.flexRow--shelf-main-addtocart :global(.vtex-button):hover {
+  background-color: #fd187c;
+  color: white;
+}
+.flexRow--shelf-main-addtocart :global(.vtex-button__label) {
+  padding: 0;
+  font-size: 0.85rem;
+}

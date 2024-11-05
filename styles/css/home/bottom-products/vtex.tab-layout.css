@@ -1,0 +1,37 @@
+.container--home-bottom-products .listItem :global(.vtex-button) {
+  background: transparent;
+  color: #000000;
+  border: 0;
+  border-bottom: 2px solid transparent;
+}
+.container--home-bottom-products .listItemActive :global(.vtex-button) {
+  border-bottom-color: #fd187c;
+}
+
+.container--home-bottom-products
+  .listItem
+  :global(.vtex-button)
+  :global(.vtex-button__label) {
+  font-size: 0.8rem;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.container--home-bottom-products .listItem {
+  margin: 0;
+  padding: 0;
+}
+
+.container--home-bottom-products .listContainer {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 640px) {
+  .container--home-bottom-products
+    .listItem
+    :global(.vtex-button)
+    :global(.vtex-button__label) {
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

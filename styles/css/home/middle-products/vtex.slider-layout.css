@@ -1,0 +1,19 @@
+.sliderTrackContainer--home-middle-products-carousel {
+  width: 45vw;
+  max-width: 1086px;
+}
+
+@media screen and (min-width: 640px) {
+  .sliderTrackContainer--home-middle-products-carousel {
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sliderTrackContainer--home-middle-products-carousel {
+    width: 72vw;
+  }
+  .sliderLayoutContainer--home-middle-products-carousel {
+    padding-bottom: 0;
+  }
+}

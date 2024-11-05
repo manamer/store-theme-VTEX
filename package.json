@@ -1,0 +1,13 @@
+{
+  "name": "store-theme",
+  "version": "1.0.0",
+  "description": "Store Theme of Funky Fish Ecuador",
+  "main": "",
+  "repository": "https://github.com/EdwinCuba/Ecuador_FunkyFish_StoreTheme.git",
+  "author": "Edwin Cuba Davila <edwincubad@gmail.com> <https://www.linkedin.com/in/edwin-cuba-davila>",
+  "license": "",
+  "private": true,
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}

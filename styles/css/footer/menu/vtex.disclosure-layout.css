@@ -1,0 +1,11 @@
+.trigger--footer-menu-disclosure :global(.vtex-rich-text-0-x-container) {
+  color: #ed2b74;
+  font-weight: bold;
+}
+
+.trigger--footer-menu-disclosure::after {
+  content: "-";
+  color: #ed2b74;
+  font-size: 2rem;
+  font-weight: normal;
+}

@@ -1,0 +1,10 @@
+.flexRow--footer-newsletter {
+  background-color: #f7dfe0;
+  padding: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .flexRowContent--footer-newsletter {
+    column-gap: 40px;
+  }
+}

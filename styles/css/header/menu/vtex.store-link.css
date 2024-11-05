@@ -1,0 +1,24 @@
+.link--item-category-mobile {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 14px;
+  color: #797878;
+  border-bottom: 1px solid #e5e5e5;
+}
+.link--item-subcategory-mobile {
+  margin: 0;
+  padding: 16px;
+  color: #797878;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+  text-transform: uppercase;
+}
+.link--todo-item-category-mobile {
+  padding: 0.75rem;
+  width: 100%;
+  color: #ed2b74;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

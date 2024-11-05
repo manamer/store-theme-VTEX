@@ -1,0 +1,7 @@
+.wrapper--footer-items-bottom .paragraph {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}

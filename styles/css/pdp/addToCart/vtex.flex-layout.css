@@ -1,0 +1,24 @@
+/* CART */
+.flexRowContent--pdp-buy-to-cart :global(.vtex-button) {
+  border-color: black;
+}
+
+.flexRowContent--pdp-buy-to-cart :global(.vtex-button__label) {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: bold;
+  padding: 15px !important;
+}
+
+/* CHECKOUT */
+
+.flexRowContent--pdp-buy-to-checkout :global(.vtex-button) {
+  border-color: #3b3b3b;
+}
+
+.flexRowContent--pdp-buy-to-checkout :global(.vtex-button__label) {
+  background-color: #3b3b3b;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 15px !important;
+}

@@ -1,0 +1,9 @@
+.openIconContainer {
+  padding: 0;
+}
+
+@media screen and (min-width: 1366px) {
+  .openIconContainer {
+    padding: 0 1rem;
+  }
+}

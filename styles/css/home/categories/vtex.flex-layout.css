@@ -1,0 +1,33 @@
+.flexRowContent--home-categories-carousel-image {
+  position: relative;
+}
+
+.flexRowContent--home-categories-carousel-image::before {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  display: block;
+  content: "";
+  width: calc(100% + 20px);
+  height: 100%;
+  background-color: #fafafa;
+  box-shadow: 0px 8px 15px 0px #0000001a;
+  border-radius: 8px;
+}
+
+.flexRowContent--home-categories-carousel-image
+  :global(.vtex-store-components-3-x-imageElement) {
+  position: relative;
+  width: 120px;
+}
+
+@media screen and (min-width: 1024px) {
+  .flexRowContent--home-categories-carousel-image:hover::before {
+    box-shadow: 0px 8px 15px 0px #ffd7d7;
+  }
+
+  .flexRowContent--home-categories-carousel-image
+    :global(.vtex-store-components-3-x-imageElement) {
+    width: 150px;
+  }
+}

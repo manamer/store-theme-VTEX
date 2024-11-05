@@ -1,0 +1,23 @@
+.paragraph {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.heading {
+  color: #fd187c;
+  margin: 0;
+}
+.headingLevel3 {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 640px) {
+  .paragraph {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .headingLevel3 {
+    font-size: 1.95rem;
+  }
+}

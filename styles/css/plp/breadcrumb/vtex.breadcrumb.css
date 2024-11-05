@@ -1,0 +1,21 @@
+.container {
+  padding: 10px 14px;
+  background-color: #f5f5f5;
+}
+
+.homeIcon {
+  display: none;
+}
+.homeLink::after {
+  content: "Inicio";
+  text-decoration: underline;
+}
+
+.homeLink::after,
+.caretIcon,
+.link {
+  color: black;
+}
+.link {
+  margin-left: 5px;
+}

@@ -1,0 +1,9 @@
+.slide--footer-brands {
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .slide--footer-brands {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,19 @@
+.flexCol--home-middle-products-image
+  :global(.vtex-store-components-3-x-imageElement) {
+  width: 45vw;
+  max-width: 270px;
+}
+
+@media screen and (min-width: 640px) {
+  .flexCol--home-middle-products-image
+    :global(.vtex-store-components-3-x-imageElement) {
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flexCol--home-middle-products-image
+    :global(.vtex-store-components-3-x-imageElement) {
+    width: 20vw;
+  }
+}

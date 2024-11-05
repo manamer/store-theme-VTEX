@@ -1,0 +1,45 @@
+.flexRow--header-tags {
+  height: 36px;
+  background-color: #3b3b3b;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.flexRow--header-tags :global(.vtex-menu-2-x-styledLinkContainer) {
+  margin: 0;
+  padding: 0;
+  margin: 0 12px;
+}
+
+.flexRow--header-tags
+  :global(.vtex-menu-2-x-styledLinkContainer)
+  :global(.vtex-menu-2-x-styledLinkIcon) {
+  height: 16px;
+}
+
+.flexRow--header-tags
+  :global(.vtex-menu-2-x-styledLinkContainer)
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  color: #ffffff;
+  font-size: 0.8rem;
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+/* MOBILE */
+.flexRow--header-tags-mobile {
+  padding: 0;
+  overflow: hidden;
+}
+.flexRowContent--header-tags-mobile {
+  display: flex;
+}
+
+.flexRow--header-tags
+  :global(.vtex-menu-2-x-styledLinkContainer)
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  font-size: 0.8rem;
+  column-gap: 0;
+}

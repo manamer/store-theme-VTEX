@@ -1,0 +1,11 @@
+.paragraph--item-category-mobile {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  color: #797878;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e5e5;
+  text-transform: uppercase;
+  font-family: "lab-normal", "sans-serif";
+}

@@ -1,0 +1,21 @@
+.productNameContainer--pdp-details-description-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.productDescriptionText {
+  color: #000000;
+  font-size: 0.85rem;
+  text-align: justify;
+}
+
+@media screen and (min-width: 640px) {
+  .productNameContainer--pdp-details-description-title {
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+  }
+  .productDescriptionText {
+    font-size: 1rem;
+  }
+}

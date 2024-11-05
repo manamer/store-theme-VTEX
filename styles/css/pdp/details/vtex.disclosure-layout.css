@@ -1,0 +1,10 @@
+.trigger--pdp-details-info-disclosure {
+  padding: 0;
+}
+.trigger--pdp-details-info-disclosure::after {
+  color: #3c3c3c;
+}
+
+.content--pdp-details-info-disclosure {
+  margin-top: 15px;
+}

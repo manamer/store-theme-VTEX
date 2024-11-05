@@ -1,0 +1,18 @@
+.sellingPrice--shelf-main,
+.listPrice--shelf-main {
+  text-align: center;
+  color: #6c757d;
+}
+.listPrice--shelf-main .listPriceValue {
+  font-size: 0.9rem;
+}
+.sellingPrice--shelf-main .sellingPriceValue {
+  font-size: 1.2rem;
+}
+
+.listPrice--shelf-main {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}

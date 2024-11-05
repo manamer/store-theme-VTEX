@@ -1,0 +1,17 @@
+.trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.trigger::after {
+  content: "-";
+  color: #000000;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.trigger--hidden::after {
+  content: "+";
+}

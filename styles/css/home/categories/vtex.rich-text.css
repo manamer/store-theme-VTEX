@@ -1,0 +1,42 @@
+.wrapper--home-categories-text {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.wrapper--home-categories-text .headingLevel3 {
+  margin-bottom: 10px;
+}
+.wrapper--home-categories-text .paragraph {
+  font-size: 1rem;
+  margin: 0;
+}
+.wrapper--home-categories-text .paragraph .link {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.wrapper--home-categories-carousel-title {
+  text-align: center;
+  width: 100%;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 640px) {
+  .wrapper--home-categories-text {
+    max-width: 250px;
+    text-align: left;
+  }
+  .wrapper--home-categories-text .headingLevel2 {
+    font-size: 1.95rem;
+    margin-bottom: 15px;
+  }
+  .wrapper--home-categories-text .paragraph {
+    font-size: 1.1rem;
+  }
+  .wrapper--home-categories-text .paragraph .link {
+    margin-top: 12px;
+  }
+}

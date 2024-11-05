@@ -1,0 +1,33 @@
+.wrapper--home-facts-item-text {
+  width: 100%;
+}
+
+.wrapper--home-facts-item-text .heading {
+  text-align: center;
+  font-size: 0.9rem;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper--home-facts-item-text .paragraph {
+  text-align: center;
+  /* font-size: 0.9rem; */
+  font-size: 0.7rem;
+  color: #3c3c3c;
+}
+
+@media screen and (min-width: 640px) {
+  .wrapper--home-facts-item-text {
+    width: auto;
+  }
+  .wrapper--home-facts-item-text .heading {
+    display: block;
+    height: auto;
+    text-align: left;
+  }
+  .wrapper--home-facts-item-text .paragraph {
+    text-align: left;
+  }
+}

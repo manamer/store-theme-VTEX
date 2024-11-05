@@ -1,0 +1,60 @@
+.submenuWrapper--subcategories {
+  padding: 1rem;
+  border: 0;
+  box-shadow: 0px 20px 20px 0px #00000026;
+}
+
+.menuItem--categories:hover .styledLinkContent--categories::before,
+.menuItem--categories--isOpen .styledLinkContent--categories::before {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #fd187c;
+}
+.styledLinkContainer--categories {
+  margin: 0;
+  padding: 0;
+}
+
+.styledLinkContainer--subcategory-title,
+.styledLinkContainer--subcategory-item {
+  margin-left: 0;
+}
+
+.styledLinkContent--categories,
+.styledLinkContent--subcategory-title {
+  position: relative;
+  font-size: 1rem;
+  color: #3c3c3c;
+  font-weight: bold;
+}
+.styledLinkContent--categories {
+  padding: 1rem 40px;
+}
+.styledLinkContent--subcategory-title {
+  font-size: 0.9rem;
+}
+.styledLinkContent--subcategory-item {
+  font-size: 0.8rem;
+}
+
+.menuContainerNav--subcategory-item {
+  width: 160px;
+  margin-bottom: 25px;
+}
+
+.styledLinkContainer--subcategory-title {
+  margin-bottom: 8px;
+}
+
+/* MOBILE */
+.menuContainerNav--item-subcategory-mobile {
+  width: 100%;
+}
+.menuContainerNav--section-items-category {
+  width: 100%;
+}

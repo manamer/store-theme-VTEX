@@ -1,0 +1,10 @@
+.wrapper--pdp-details-info-specifications .paragraph {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+@media screen and (min-width: 640px) {
+  .wrapper--pdp-details-info-specifications .paragraph {
+    font-size: 1.8rem;
+  }
+}

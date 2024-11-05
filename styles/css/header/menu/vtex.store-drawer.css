@@ -1,0 +1,86 @@
+.openIconContainer--item-category-mobile {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  padding: 16px;
+}
+.openIconContainer--item-category-mobile
+  :global(.vtex-store-components-3-x-imageElement) {
+  float: right;
+}
+.childrenContainer--item-category-mobile {
+  display: block;
+}
+.closeIconContainer--section-items-category {
+  position: absolute;
+  left: auto;
+  right: 0;
+  background: #fff;
+  top: auto;
+  bottom: 0;
+}
+.closeIconContainer--section-items-category {
+  border-bottom-left-radius: 15px;
+  padding: 0.5rem;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.closeIconContainer--section-items-category::before {
+  background-image: url(assets/logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 41px;
+  content: "";
+}
+
+.closeIconContainer--section-items-category
+  .closeIconButton--section-items-category {
+  color: white;
+  padding: 0.2rem 0.35rem;
+  border: 0;
+  border-radius: 0;
+}
+
+.closeIconContainer--section-items-category .closeIcon--section-items-category {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.drawerHeader--header-drawer {
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+}
+.drawerHeader--header-drawer-arrow-back .closeIcon {
+  display: none;
+}
+.drawerHeader--header-drawer-arrow-back .closeIconButton {
+  display: flex;
+  align-items: center;
+  background-color: #ececec;
+}
+
+.drawerHeader--header-drawer-arrow-back .closeIconButton::before {
+  background-image: url(assets/icons/arrow-back.svg);
+  width: 14px;
+  height: 14px;
+  background-size: contain;
+  content: "";
+  background-repeat: no-repeat;
+  display: block;
+  padding-right: 0.25em;
+}
+
+.drawerHeader--header-drawer-arrow-back .closeIconButton::after {
+  content: "Volver";
+  display: block;
+  padding-left: 0.5rem;
+  color: #ed2b74;
+  font-size: 0.9375rem;
+  font-family: "lab-regular", sans-serif;
+}

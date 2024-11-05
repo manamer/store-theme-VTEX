@@ -1,0 +1,52 @@
+.emailInputContainer :global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.formSubmitContainer :global(.vtex-button) {
+  border-radius: 20px;
+  font-weight: bold;
+}
+.emailInputContainer :global(.vtex-styleguide-9-x-input),
+.emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+  text-align: center;
+}
+
+.newsletterForm,
+.emailInputContainer :global(.vtex-input-prefix__group),
+.formSubmitContainer :global(.vtex-button) {
+  border-radius: 30px;
+}
+.newsletterForm {
+  position: relative;
+  background-color: #ffffff;
+  padding: 3px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+  .newsletterForm {
+    margin: 0;
+  }
+}
+.confirmationCheckboxContainer {
+  position: absolute;
+  bottom: -25px;
+}
+@media screen and (min-width: 640px) {
+  .confirmationCheckboxContainer {
+    position: absolute;
+    bottom: -50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .confirmationCheckboxContainer {
+    position: absolute;
+    bottom: -40px;
+  }
+}
+
+.confirmationCheckboxContainer :global(.vtex-checkbox__inner-container) {
+  border-color: #fd187c;
+}

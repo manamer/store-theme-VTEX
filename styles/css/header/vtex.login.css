@@ -1,0 +1,53 @@
+:global(.vtex-toast) {
+  background-color: #fd187c !important;
+}
+
+.container :global(.vtex-button) {
+  padding-left: 8px;
+  padding-right: 10px;
+}
+.container :global(.vtex-button__label) {
+  padding: 0 !important;
+}
+
+.profileIcon,
+.profile.iconContainer::before {
+  display: none;
+}
+.iconContainer::before {
+  display: inline-block;
+  content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMTlWMTcuODc1QzEgMTMuNTI1OCA0LjUyNTc2IDEwIDguODc1IDEwTTguODc1IDEwQzEzLjIyNDIgMTAgMTYuNzUgMTMuNTI1OCAxNi43NSAxNy44NzVWMTlNOC44NzUgMTBDMTEuMzYwMiAxMCAxMy4zNzUgNy45ODUyNCAxMy4zNzUgNS41QzEzLjM3NSAzLjAxNDcyIDExLjM2MDIgMSA4Ljg3NSAxQzYuMzg5NzIgMSA0LjM3NSAzLjAxNDcyIDQuMzc1IDUuNUM0LjM3NSA3Ljk4NTI0IDYuMzg5NzIgMTAgOC44NzUgMTBaIiBzdHJva2U9IiMzQzNDM0MiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+  height: 20px;
+}
+
+.label,
+.profile {
+  text-align: left;
+  text-transform: none;
+  color: #ed2b74;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1rem;
+  min-width: 75px;
+  display: block;
+}
+
+.profile {
+  white-space: break-spaces;
+  text-overflow: clip;
+}
+.profile::first-line {
+  color: #3c3c3c;
+  font-weight: normal;
+}
+
+.label::before {
+  display: block;
+  content: "Hola,";
+  color: #3c3c3c;
+  font-weight: normal;
+}
+
+.container :global(.mr3.nl3.flex.items-center):has(.iconContainer) {
+  margin: 0;
+}

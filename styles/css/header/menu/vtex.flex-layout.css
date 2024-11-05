@@ -1,0 +1,20 @@
+.flexRow--subcategories {
+  max-width: 1000px;
+}
+
+.flexRowContent--subcategories-items {
+  flex-wrap: wrap;
+}
+
+.flexRowContent--subcategories-images
+  :global(.vtex-store-components-3-x-imageElement) {
+  max-width: unset;
+  max-height: unset;
+  border-radius: 20px;
+}
+
+/* MENU MOBILE */
+.flexRow--item-category-mobile {
+  height: 55px;
+  margin: 0;
+}

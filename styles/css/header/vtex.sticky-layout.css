@@ -1,0 +1,20 @@
+.wrapper--sticky-header,
+.container--sticky-header {
+  background-color: #ffffff;
+}
+
+.container--sticky-header-mobile {
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .container--sticky-header {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .container--sticky-header {
+    padding: 0 30px;
+  }
+}

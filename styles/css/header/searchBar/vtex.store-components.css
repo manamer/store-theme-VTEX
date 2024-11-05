@@ -1,0 +1,50 @@
+.searchBarContainer {
+  width: 350px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border-radius: 24px;
+  border-width: 1px;
+  border-color: #f5f5f5;
+  height: 42px;
+}
+
+.searchBarContainer
+  :global(.vtex-input-prefix__group)
+  :global(.vtex-styleguide-9-x-input),
+.searchBarContainer
+  :global(.vtex-input-prefix__group)
+  :global(.vtex-input__suffix) {
+  background-color: #f5f5f5;
+}
+
+.searchBarContainer
+  :global(.vtex-input-prefix__group)
+  :global(.vtex-styleguide-9-x-input)::placeholder {
+  color: transparent;
+}
+
+.searchBarContainer
+  :global(.vtex-input-prefix__group)
+  :global(.vtex-input__suffix) {
+  padding: 4px;
+}
+.searchBarContainer .searchBarIcon {
+  height: fit-content;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .searchBarContainer :global(.vtex-input-prefix__group) {
+    border-color: #6c757d;
+  }
+
+  .searchBarContainer
+    :global(.vtex-input-prefix__group)
+    :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: #3c3c3c;
+  }
+}
