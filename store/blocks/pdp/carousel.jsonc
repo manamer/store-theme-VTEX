@@ -1,0 +1,90 @@
+{
+  "flex-layout.row#pdp-products-carousel": {
+    "children": ["flex-layout.col#pdp-products-carousel-container"],
+    "props": { "blockClass": "section" }
+  },
+  "flex-layout.col#pdp-products-carousel-container": {
+    "children": [
+      "responsive-layout.mobile#pdp-products-carousel-title",
+      "flex-layout.row#pdp-products-carousel-content"
+    ]
+  },
+
+  "responsive-layout.mobile#pdp-products-carousel-title": {
+    "children": ["rich-text#pdp-products-carousel-title"]
+  },
+  "rich-text#pdp-products-carousel-title": {
+    "props": {
+      "text": "### Products Similares",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#pdp-products-carousel-content": {
+    "children": [
+      "flex-layout.col#pdp-products-image",
+      "flex-layout.col#pdp-products-carousel"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "between",
+      "marginTop": 5,
+      "blockClass": "home-principal-products-carousel"
+    }
+  },
+
+  "flex-layout.col#pdp-products-image": {
+    "children": [
+      "responsive-layout.desktop#pdp-produts-carousel-image",
+      "responsive-layout.mobile#pdp-produts-carousel-image"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "blockClass": "home-middle-products-image"
+    }
+  },
+  "responsive-layout.desktop#pdp-produts-carousel-image": {
+    "children": ["image#pdp-produts-carousel-image"]
+  },
+  "image#pdp-produts-carousel-image": {
+    "props": {
+      "src": "https://placehold.co/270x433"
+    }
+  },
+  "responsive-layout.mobile#pdp-produts-carousel-image": {
+    "children": ["image#pdp-produts-carousel-image-mobile"]
+  },
+  "image#pdp-produts-carousel-image-mobile": {
+    "props": {
+      "src": "https://placehold.co/160x320"
+    }
+  },
+
+  "flex-layout.col#pdp-products-carousel": {
+    "children": ["list-context.product-list#pdp-products-carousel"],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+
+  "list-context.product-list#pdp-products-carousel": {
+    "blocks": ["product-summary.shelf#main"],
+    "children": ["slider-layout#pdp-products-carousel"]
+  },
+  "slider-layout#pdp-products-carousel": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "home-middle-products-carousel"
+    }
+  }
+}

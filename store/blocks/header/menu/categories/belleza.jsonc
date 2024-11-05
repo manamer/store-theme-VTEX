@@ -1,0 +1,274 @@
+{
+  "menu-item#categories-belleza": {
+    "blocks": ["vtex.menu@2.x:submenu#categories-belleza"],
+    "props": {
+      "blockClass": "categories",
+      "itemProps": {
+        "text": "Belleza",
+        "href": "/belleza"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu#categories-belleza": {
+    "children": ["flex-layout.row#categories-belleza"],
+    "props": {
+      "width": "100%",
+      "blockClass": "subcategories"
+    }
+  },
+  "flex-layout.row#categories-belleza": {
+    "children": [
+      "flex-layout.col#categories-belleza-items",
+      "flex-layout.col#categories-belleza-images"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 7,
+      "blockClass": "subcategories"
+    }
+  },
+
+  "flex-layout.col#categories-belleza-items": {
+    "children": ["flex-layout.row#categories-belleza-items"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#categories-belleza-items": {
+    "children": [
+      "vtex.menu@2.x:menu#subcategory-belleza",
+      "vtex.menu@2.x:menu#subcategory-cuidado-personal",
+      "vtex.menu@2.x:menu#subcategory-accesorios"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 0,
+      "blockClass": "subcategories-items"
+    }
+  },
+
+  // MAQUILLAJE
+  "menu-item#subcategory-belleza-maquillaje": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": {
+        "text": "Maquillaje",
+        "href": "/belleza/maquillaje"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-belleza": {
+    "children": ["menu-item#subcategory-belleza-maquillaje"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        {
+          "itemProps": {
+            "text": "Labios",
+            "href": "/belleza/maquillaje/labios"
+          }
+        },
+        { "itemProps": { "text": "Ojos", "href": "/belleza/maquillaje/ojos" } },
+        {
+          "itemProps": {
+            "text": "Rostro",
+            "href": "/belleza/maquillaje/rostro"
+          }
+        },
+        { "itemProps": { "text": "Uñas", "href": "/belleza/maquillaje/unas" } }
+      ]
+    }
+  },
+
+  // CUIDADO PERSONAL
+  "menu-item#subcategory-belleza-cuidoda-personal": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": {
+        "text": "Cuidado personal",
+        "href": "/belleza/cuidado-personal"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-cuidado-personal": {
+    "children": ["menu-item#subcategory-belleza-cuidoda-personal"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        {
+          "itemProps": {
+            "text": "Corporal",
+            "href": "/belleza/cuidado-personal/corporal"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Capilar",
+            "href": "/belleza/cuidado-personal/capilar"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Facial",
+            "href": "/belleza/cuidado-personal/facial"
+          }
+        }
+      ]
+    }
+  },
+
+  // TRATAMIENTO CAPILAR
+  "menu-item#subcategory-belleza-tratamiento-capilar": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": {
+        "text": "Tratamiento capilar",
+        "href": "/belleza/accesorios-de-belleza"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-tratamiento-capilar": {
+    "children": ["menu-item#subcategory-belleza-tratamiento-capilar"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        {
+          "itemProps": {
+            "text": "Marc Anthony",
+            "href": "/belleza/accesorios-de-belleza/marc-"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Placenta life",
+            "href": "/belleza/accesorios-de-belleza/"
+          }
+        }
+      ]
+    }
+  },
+
+  // CUERPO
+  "menu-item#subcategory-belleza-cuerpo": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": {
+        "text": "Cuerpo"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-cuerpo": {
+    "children": ["menu-item#subcategory-belleza-cuerpo"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        { "itemProps": { "text": "Cremas corporales" } },
+        { "itemProps": { "text": "Cremas de mano" } },
+        { "itemProps": { "text": "Exfoliantes" } },
+        { "itemProps": { "text": "Lociones corporales" } }
+      ]
+    }
+  },
+
+  // POR MARCAS
+  "menu-item#subcategory-belleza-por-marcas": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": {
+        "text": "Maquillaje"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-por-marcas": {
+    "children": ["menu-item#subcategory-belleza-por-marcas"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        { "itemProps": { "text": "Labios" } },
+        { "itemProps": { "text": "Ojos" } },
+        { "itemProps": { "text": "Rostro" } },
+        { "itemProps": { "text": "Uñas" } }
+      ]
+    }
+  },
+
+  // ACCESORIOS
+  "menu-item#subcategory-belleza-accesorios": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": {
+        "text": "Accesorios de belleza",
+        "href": "/belleza/accesorios-de-belleza"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-accesorios": {
+    "children": ["menu-item#subcategory-belleza-accesorios"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        {
+          "itemProps": {
+            "text": "Limpiadores",
+            "href": "/belleza/accesorios-de-belleza/limpiadores"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Espejos y cepillos",
+            "href": "/belleza/accesorios-de-belleza/espejos-y-cepillos"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Brochas y pinceles",
+            "href": "/belleza/accesorios-de-belleza/brochas-y-pinceles"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Organizador de cosméticos",
+            "href": "/belleza/accesorios-de-belleza/organizador-de-consmeticos"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Otros accesorios",
+            "href": "/belleza/accesorios-de-belleza/otros-accesorios"
+          }
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#categories-belleza-images": {
+    "children": ["flex-layout.row#categories-belleza-images"]
+  },
+  "flex-layout.row#categories-belleza-images": {
+    "children": [
+      "image#categories-belleza-images-left",
+      "image#categories-belleza-images-right"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 5,
+      "blockClass": "subcategories-images"
+    }
+  },
+  "image#categories-belleza-images-left": {
+    "props": {
+      "src": "https://placehold.co/200x200"
+    }
+  },
+  "image#categories-belleza-images-right": {
+    "props": {
+      "src": "https://placehold.co/200x200"
+    }
+  }
+}

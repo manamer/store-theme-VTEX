@@ -1,0 +1,342 @@
+{
+  "flex-layout.row#categorias-ropa-mobile": {
+    "children": ["rich-text#title-categoria-ropa", "drawer#categoria-ropa"],
+    "props": {
+      "width": "100%",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "rich-text#title-categoria-ropa": {
+    "props": {
+      "text": "seasons",
+      "href": "/seasons",
+      "blockClass": "item-category-mobile"
+    }
+  },
+
+  "drawer#categoria-ropa": {
+    "children": ["menu#drawer-ropa"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": ["drawer-trigger", "drawer-header#section-subcategoria-ropa"]
+  },
+  "drawer-header#section-subcategoria-ropa": {
+    "children": ["link#todo-categoria-ropa", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-ropa": {
+    "props": {
+      "label": "seasons",
+      "href": "/seasons",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  "menu#drawer-ropa": {
+    "children": [
+      "flex-layout.row#subcategorias-ropa-paradormir-mobile",
+      "flex-layout.row#subcategorias-ropa-paraelfrio-mobile",
+      "flex-layout.row#subcategorias-ropa-regresoaclases-mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "link#hombre-estilo-active": {
+    "props": {
+      "label": "active",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-bikinis": {
+    "props": {
+      "label": "bikinis",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-tyedye": {
+    "props": {
+      "label": "tye dye",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-pantuflas": {
+    "props": {
+      "label": "pantuflas",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-ropainterior": {
+    "props": {
+      "label": "ropa interior",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-homewear": {
+    "props": {
+      "label": "homewear",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+
+  /* DRAWER 3 - ropa para dormir */
+  "flex-layout.row#subcategorias-ropa-paradormir-mobile": {
+    "children": [
+      "rich-text#title-subcategoria-ropa-paradormir",
+      "drawer#subcategoria-ropa-paradormir"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-ropa-paradormir": {
+    "props": {
+      "text": "Verano",
+      "href": "/seasons/verano",
+      "blockClass": "item-category-mobile"
+    }
+  },
+
+  "drawer#subcategoria-ropa-paradormir": {
+    "children": ["menu#drawer-ropa-paradormir"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#hombre-subcategoria-item-ropa-paradormir"
+    ]
+  },
+  "drawer-header#hombre-subcategoria-item-ropa-paradormir": {
+    "children": ["link#ropa-paradormir", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#ropa-paradormir": {
+    "props": {
+      "label": "Verano",
+      "href": "/seasons/verano",
+
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  "menu#drawer-ropa-paradormir": {
+    "children": [
+      "link#hombre-estilo-pijamas",
+      "link#hombre-estilo-cobijassalidas",
+      "link#hombre-estilo-cubreojos"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-pijamas": {
+    "props": {
+      "label": "bikinis",
+      "href": "/seasons/verano/pijamas",
+
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-cobijassalidas": {
+    "props": {
+      "label": "Gafas de sol",
+      "href": "/seasons/verano/gafas-de-sol",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-cubreojos": {
+    "props": {
+      "label": "sombreros",
+      "href": "/seasons/verano/sombreros",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+
+  /* DRAWER 3 - ropa para el frio */
+  "flex-layout.row#subcategorias-ropa-paraelfrio-mobile": {
+    "children": [
+      "rich-text#title-subcategoria-ropa-paraelfrio",
+      "drawer#subcategoria-ropa-paraelfrio"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-ropa-paraelfrio": {
+    "props": {
+      "text": "invierno",
+      "href": "/seasons/invierno",
+
+      "blockClass": "item-category-mobile"
+    }
+  },
+
+  "drawer#subcategoria-ropa-paraelfrio": {
+    "children": ["menu#drawer-ropa-paraelfrio"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#hombre-subcategoria-item-ropa-paraelfrio"
+    ]
+  },
+  "drawer-header#hombre-subcategoria-item-ropa-paraelfrio": {
+    "children": ["link#ropa-paraelfrio", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#ropa-paraelfrio": {
+    "props": {
+      "href": "/seasons/invierno",
+      "label": "invierno",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  "menu#drawer-ropa-paraelfrio": {
+    "children": [
+      "link#hombre-estilo-friomedias",
+      "link#hombre-estilo-friobufandas",
+      "link#hombre-estilo-friogorrosorej",
+      "link#hombre-estilo-mitonesguantes",
+      "link#hombre-estilo-cobijass"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-friomedias": {
+    "props": {
+      "href": "/seasons/invierno/gorros",
+      "label": "Gorros",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-friobufandas": {
+    "props": {
+      "label": "bufandas",
+      "href": "/seasons/invierno/bufandas",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-friogorrosorej": {
+    "props": {
+      "label": "orejeras",
+      "href": "/seasons/invierno/orejeras",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-mitonesguantes": {
+    "props": {
+      "label": "Guantes",
+      "href": "/seasons/invierno/guantes",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-cobijass": {
+    "props": {
+      "label": "Cobijas",
+      "href": "/seasons/invierno/cobijas",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+
+  /* DRAWER 3 - regreso a clases */
+  "flex-layout.row#subcategorias-ropa-regresoaclases-mobile": {
+    "children": [
+      "rich-text#title-subcategoria-ropa-regresoaclases",
+      "drawer#subcategoria-ropa-regresoaclases"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-ropa-regresoaclases": {
+    "props": {
+      "text": "Regreso a clases",
+      "href": "/seasons/regreso-a-clases",
+      "blockClass": "item-category-mobile"
+    }
+  },
+
+  "drawer#subcategoria-ropa-regresoaclases": {
+    "children": ["menu#drawer-ropa-regresoaclases"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#hombre-subcategoria-item-ropa-regresoaclases"
+    ]
+  },
+  "drawer-header#hombre-subcategoria-item-ropa-regresoaclases": {
+    "children": ["link#ropa-regresoaclases", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#ropa-regresoaclases": {
+    "props": {
+      "label": "Regreso a clases",
+      "href": "/seasons/regreso-a-clases",
+
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  "menu#drawer-ropa-regresoaclases": {
+    "children": [
+      "link#hombre-estilo-mochilass",
+      "link#hombre-estilo-cartcherass",
+      "link#hombre-estilo-loncherass",
+      "link#hombre-estilo-papeleria",
+      "link#hombre-estilo-cobijass"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-mochilass": {
+    "props": {
+      "label": "Mochilas",
+      "href": "/seasons/regreso-a-clases/mochilas",
+
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-cartcherass": {
+    "props": {
+      "label": "Cartucheras",
+      "href": "/seasons/regreso-a-clases/cartucheras",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-loncherass": {
+    "props": {
+      "label": "Loncheras",
+      "href": "/seasons/regreso-a-clases/loncheras",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-papeleria": {
+    "props": {
+      "label": "Papelería",
+      "href": "/seasons/regreso-a-clases/papeleria",
+      "blockClass": "item-subcategory-mobile"
+    }
+  }
+}

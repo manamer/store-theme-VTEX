@@ -1,0 +1,44 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header-layout.desktop": {
+    "children": [
+      "menu-item#button-floting-whatsapp",
+      "flex-layout.row#header-tags",
+      "sticky-layout#header"
+    ]
+  },
+  "header-layout.mobile": {
+    "children": [
+      "menu-item#button-floting-whatsapp",
+      "flex-layout.row#header-tags-mobile",
+      "sticky-layout#header-mobile"
+    ]
+  },
+
+  "menu-item#button-floting-whatsapp": {
+    "props": {
+      "id": "item-icon-whatsapp",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["icono-button-floting", "footer-redes-sociales-whatsapp"],
+      "itemProps": {
+        "type": "internal",
+        "href": "https://api.whatsapp.com/send?phone=593994160039",
+        "noFollow": false,
+        "tagTitle": "Ir a WhatsApp",
+        "target": "target"
+      },
+      "iconProps": {
+        "id": "hpa-whatsapp-button",
+        "size": 30,
+        "viewBox": "0 0 448 512"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "store.custom#guia-envio": {
+    "blocks": ["flex-layout.row#guia-envio"]
+  },
+  "flex-layout.row#guia-envio": {
+    "children": ["rich-text#guia-envio"]
+  },
+  "rich-text#guia-envio": {
+    "props": {
+      "text": "# Envío y Entregas\n\n<br/>Métodos de envío:\n\n| Lugar de entrega | Empresa a cargo | Método de entrega | Tiempo de entrega |\n| --- | ----------- | ----------- | ----------- |\n| Domicilio | Tramaco Express | A domicilio | Dos a Cuatro días laborables |\n| Tiendas | Tramaco Express | A tiendas | Dos a Cuatro días laborables |  \n\n<br/>No olvides que la entrega se cuenta dentro de días laborales y esto excluye sábados, domingos y festivos. El tiempo de entrega empieza a contar a partir del día en que recibes el correo de confirmación, no necesariamente el mismo día de la compra.\n\n<br/>Costo de envío:\n-   Si el valor de compra es mayor a $19.99 -- envío gratis\n-   Para compras menores a $19.99  --  recargo de $3.99 por envío\n\n<br/>**¿PUEDO ELEGIR UNA FECHA Y HORA PARA LA ENTREGA DE MI PRODUCTO?**\n\n<br/>Por el momento no podemos agendar ninguna fecha u hora para entregar tus productos, ya que la empresa cuenta con rutas específicas a seguir según la zona geográfica. Sin embargo, cuando tu producto sea enviado, te enviaremos un correo donde tendrás el número de guía y podrás rastrear tu pedido en el siguiente link:\n\n<br/><http://logistic.tramaco.com.ec:8080/slac-war/Tracking.jsf>\n\n<br/>**¿QUÉ HAGO SI NO ESTABA EN EL MOMENTO DE LA ENTREGA?**\n\n<br/>No te preocupes, la paquetería realizará hasta un segundo intento de entrega.\n\n<br/>Además el mensajero puede dejar tu pedido con cualquier persona que sea mayor de edad y cuente con una identificación oficial.\n\n<br/>**¿DEBO ESTAR EN CASA CUANDO LLEGUE EL MENSAJERO?**\n\n<br/>No necesariamente. El mensajero puede dejar tu pedido con cualquier persona que sea mayor de edad y cuente con una identificación.\n\n<br/>En caso contrario, nos comunicaremos contigo para informarte sobre la nueva fecha de entrega.\n\n<br/>Existe un límite de intentos de entrega, normalmente se realizan dos. De no tener respuesta en ningún intento y no poder hacer entrega del pedido nos comunicaremos contigo para buscar la mejor manera de hacerte llegar tu compra."
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "search-bar": {
+    "props": {
+      "placeholder": "¿Buscas algo en especial?"
+    }
+  }
+}

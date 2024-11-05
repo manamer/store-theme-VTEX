@@ -1,0 +1,13 @@
+{
+  "store.custom#formas-de-pago": {
+    "blocks": ["flex-layout.row#formas-de-pago"]
+  },
+  "flex-layout.row#formas-de-pago": {
+    "children": ["rich-text#formas-de-pago"]
+  },
+  "rich-text#formas-de-pago": {
+    "props": {
+      "text": "# Formas de Pago\n\n\n**FORMAS DE PAGO - Conoce todas las opciones.**\nTarjetas de crédito y débito (Pago seguro en Place to Pay)\n-   Diners\n-   Visa\n-   MasterCard\n-   Discover\n\n**Depósito bancario y transferencia electrónica**\n\nRealiza tu depósito o transferencia a la cuenta que ponemos a tu disposición. Envíanos tu comprobante a support@funkyfish.ec\n-   ENTIDAD: BANCO DEL PICHINCHA\n-   TIPO DE CUENTA: CORRIENTE\n-   NÚMERO DE CUENTA: 3033554904\n-   RUC: 1790027791001\n-   RAZON SOCIAL: MANUFACTURAS AMERICANAS CIA LTDA\n\nUna vez realizada la transferencia o el depósito por favor envíanos: \n-   Foto del comprobante a support@funkyfish.ec\n-   Número de tu pedido de nuestra página.\n-   Número de confirmación del Banco.\n\nPuedes realizar la transferencia o depósito hasta 3 días después de colocar la orden, si pasan los 3 días la orden se cancelará automáticamente"
+    }
+  }
+}

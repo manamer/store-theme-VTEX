@@ -1,0 +1,53 @@
+{
+  "flex-layout.row#pdp-buy-section": {
+    "children": ["flex-layout.col#pdp-buy-section"],
+    "props": { "marginTop": 5 }
+  },
+  "flex-layout.col#pdp-buy-section": {
+    "children": [
+      "product-availability",
+      "flex-layout.row#pdp-line-separator",
+      "product-identifier.product",
+      "flex-layout.row#pdp-buy-cart",
+      "flex-layout.row#pdp-buy-checkout"
+    ]
+  },
+
+  "flex-layout.row#pdp-line-separator": {
+    "children": ["product-separator"],
+    "props": {
+      "marginTop": 3,
+      "marginBottom": 3
+    }
+  },
+  "product-availability": {
+    "props": {
+      "threshold": 5,
+      "lowStockMessage": "¡ SOLO QUEDAN {quantity} UNIDADES !",
+      "highStockMessage": "EN STOCK"
+    }
+  },
+
+  "product-identifier.product": {
+    "props": {
+      "label": "custom", //'default' | 'custom' | 'hide'
+      "customLabel": "SKU", // text if label is custom
+      "idField": "productReference" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+    }
+  },
+
+  "flex-layout.row#pdp-buy-cart": {
+    "props": {
+      "marginTop": 5,
+      "marginBottom": 3,
+      "blockClass": "pdp-buy-to-cart"
+    },
+    "children": ["add-to-cart-button#cart"]
+  },
+  "flex-layout.row#pdp-buy-checkout": {
+    "props": {
+      "blockClass": "pdp-buy-to-checkout"
+    },
+    "children": ["add-to-cart-button#checkout"]
+  }
+}

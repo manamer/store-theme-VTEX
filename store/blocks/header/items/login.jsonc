@@ -1,0 +1,9 @@
+{
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "labelClasses": [" vtex-login-2-x-iconContainer"],
+      "iconLabel": "Mi cuenta"
+    }
+  }
+}

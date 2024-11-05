@@ -1,0 +1,8 @@
+{
+  "flex-layout.row#full-line": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["full", "full-line"]
+    }
+  }
+}

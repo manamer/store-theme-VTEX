@@ -1,0 +1,14 @@
+{
+  "flex-layout.row#product-name": {
+    "props": {
+      "paddingBottom": 5
+    },
+    "children": ["vtex.store-components:product-name"]
+  },
+
+  "vtex.store-components:product-name": {
+    "props": {
+      "blockClass": "pdp"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "flex-layout.row#home-facts": {
+    "children": [
+      "flex-layout.col#home-facts-delivery",
+      "flex-layout.col#home-facts-payment",
+      "flex-layout.col#home-facts-stores"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "blockClass": "section"
+    }
+  },
+
+  // DELIVERY
+  "flex-layout.col#home-facts-delivery": {
+    "children": ["flex-layout.row#home-facts-delivery"],
+    "props": {
+      "blockClass": "home-facts-item"
+    }
+  },
+  "flex-layout.row#home-facts-delivery": {
+    "children": [
+      "flex-layout.col#home-facts-delivery-image",
+      "flex-layout.col#home-facts-delivery-text"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "right",
+      "colGap": 5
+    }
+  },
+  "flex-layout.col#home-facts-delivery-image": {
+    "children": ["image#home-facts-delivery-image"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#home-facts-delivery-image": {
+    "props": {
+      "src": "assets/icons/delivery.svg",
+      "blockClass": "home-facts-item-image"
+    }
+  },
+  "flex-layout.col#home-facts-delivery-text": {
+    "children": ["rich-text#home-facts-delivery-text"],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#home-facts-delivery-text": {
+    "props": {
+      "text": "##### **ENVIO GRATIS**\nPara ordenes mayores a $19.99",
+      "blockClass": "home-facts-item-text"
+    }
+  },
+
+  // PAYMENT
+  "flex-layout.col#home-facts-payment": {
+    "children": ["flex-layout.row#home-facts-payment"],
+    "props": {
+      "blockClass": "home-facts-item"
+    }
+  },
+  "flex-layout.row#home-facts-payment": {
+    "children": [
+      "flex-layout.col#home-facts-payment-image",
+      "flex-layout.col#home-facts-payment-text"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "colGap": 5
+    }
+  },
+  "flex-layout.col#home-facts-payment-image": {
+    "children": ["image#home-facts-payment-image"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#home-facts-payment-image": {
+    "props": {
+      "src": "assets/icons/dollar.svg",
+      "blockClass": "home-facts-item-image"
+    }
+  },
+  "flex-layout.col#home-facts-payment-text": {
+    "children": ["rich-text#home-facts-payment-text"],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#home-facts-payment-text": {
+    "props": {
+      "text": "##### **FORMAS DE PAGO**\nConoce todas las opciones",
+      "blockClass": "home-facts-item-text"
+    }
+  },
+
+  // STORES
+  "flex-layout.col#home-facts-stores": {
+    "children": ["flex-layout.row#home-facts-stores"],
+    "props": {
+      "blockClass": "home-facts-item"
+    }
+  },
+  "flex-layout.row#home-facts-stores": {
+    "children": [
+      "flex-layout.col#home-facts-stores-image",
+      "flex-layout.col#home-facts-stores-text"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 5
+    }
+  },
+  "flex-layout.col#home-facts-stores-image": {
+    "children": ["image#home-facts-stores-image"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "image#home-facts-stores-image": {
+    "props": {
+      "src": "assets/icons/store.svg",
+      "blockClass": "home-facts-item-image"
+    }
+  },
+  "flex-layout.col#home-facts-stores-text": {
+    "children": ["rich-text#home-facts-stores-text"],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#home-facts-stores-text": {
+    "props": {
+      "text": "##### **RETIRA EN NUESTRAS TIENDAS**\nRevisa el listado de nuestras tiendas",
+      "blockClass": "home-facts-item-text"
+    }
+  }
+}

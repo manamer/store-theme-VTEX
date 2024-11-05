@@ -1,0 +1,97 @@
+{
+  "flex-layout.row#footer-menu-mobile": {
+    "children": ["flex-layout.col#footer-menu-mobile"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["full", "footer-menu", "footer-menu-mobile"]
+    }
+  },
+  "flex-layout.col#footer-menu-mobile": {
+    "children": [
+      "flex-layout.row#footer-menu-items-logo",
+      "flex-layout.row#footer-menu-disclosure",
+      "flex-layout.row#footer-menu-mobile-bottom"
+    ]
+  },
+  "flex-layout.row#footer-menu-disclosure": {
+    "children": ["flex-layout.col#footer-menu-disclosure"],
+    "props": {
+      "marginTop": 5
+    }
+  },
+  "flex-layout.col#footer-menu-disclosure": {
+    "children": [
+      "disclosure-layout#footer-menu-account",
+      "disclosure-layout#footer-menu-about",
+      "disclosure-layout#footer-menu-contact"
+    ],
+    "props": { "blockClass": "footer-menu-disclosure" }
+  },
+
+  // Account
+  "disclosure-layout#footer-menu-account": {
+    "children": [
+      "disclosure-trigger#footer-menu-account",
+      "disclosure-content#footer-menu-account"
+    ]
+  },
+  "disclosure-trigger#footer-menu-account": {
+    "children": ["rich-text#footer-menu-disclosure-account"],
+    "props": { "as": "p", "blockClass": "footer-menu-disclosure" }
+  },
+  "rich-text#footer-menu-disclosure-account": {
+    "props": { "text": "MI CUENTA" }
+  },
+  "disclosure-content#footer-menu-account": {
+    "children": ["rich-text#footer-contact-account"]
+  },
+
+  // About
+  "disclosure-layout#footer-menu-about": {
+    "children": [
+      "disclosure-trigger#footer-menu-about",
+      "disclosure-content#footer-menu-about"
+    ]
+  },
+  "disclosure-trigger#footer-menu-about": {
+    "children": ["rich-text#footer-menu-disclosure-about"],
+    "props": { "as": "p", "blockClass": "footer-menu-disclosure" }
+  },
+  "rich-text#footer-menu-disclosure-about": {
+    "props": { "text": "ACERCA DE" }
+  },
+  "disclosure-content#footer-menu-about": {
+    "children": ["rich-text#footer-contact-about"]
+  },
+
+  // Contact
+  "disclosure-layout#footer-menu-contact": {
+    "children": [
+      "disclosure-trigger#footer-menu-contact",
+      "disclosure-content#footer-menu-contact"
+    ]
+  },
+  "disclosure-trigger#footer-menu-contact": {
+    "children": ["rich-text#footer-menu-disclosure-contact"],
+    "props": { "as": "p", "blockClass": "footer-menu-disclosure" }
+  },
+  "rich-text#footer-menu-disclosure-contact": {
+    "props": { "text": "CONTACTO" }
+  },
+  "disclosure-content#footer-menu-contact": {
+    "children": ["rich-text#footer-contact-items"]
+  },
+
+  // BOTTOM
+  "flex-layout.row#footer-menu-mobile-bottom": {
+    "children": [
+      "rich-text#footer-items-payments",
+      "flex-layout.row#full-line",
+      "rich-text#footer-items-copyright"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 5
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "flex-layout.row#separator": {
+    "props": {
+      "blockClass": "separator"
+    }
+  },
+
+  "product-summary.shelf#main": {
+    "children": [
+      "product-summary-image#shelf-main",
+      "product-summary-name#shelf-main",
+      "flex-layout.row#shelf-main-prices",
+      "flex-layout.row#separator",
+      "flex-layout.row#shelf-main-addtocart"
+    ],
+    "props": {
+      "blockClass": "shelf-main"
+    }
+  },
+
+  "product-summary-image#shelf-main": {
+    "props": {
+      "blockClass": "shelf-main"
+    }
+  },
+
+  "product-summary-name#shelf-main": {
+    "props": {
+      "blockClass": "shelf-main"
+    }
+  },
+
+  "flex-layout.row#shelf-main-prices": {
+    "children": [
+      "product-list-price#shelf-main",
+      "product-selling-price#shelf-main"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "marginTop": 3,
+      "marginBottom": 7
+    }
+  },
+  "product-list-price#shelf-main": {
+    "props": {
+      "message": "{listPriceWithTax}",
+      "blockClass": "shelf-main"
+    }
+  },
+  "product-selling-price#shelf-main": {
+    "props": {
+      "message": "{sellingPriceWithTax}",
+      "blockClass": "shelf-main"
+    }
+  },
+
+  "flex-layout.row#shelf-main-addtocart": {
+    "children": ["add-to-cart-button#shelf-main"],
+    "props": {
+      "blockClass": "shelf-main-addtocart"
+    }
+  },
+  "add-to-cart-button#shelf-main": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "text": "Añadir al carrito",
+      "blockClass": "shelf-main"
+    }
+  }
+}

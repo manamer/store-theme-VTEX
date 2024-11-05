@@ -1,0 +1,13 @@
+{
+  "store.custom#dactivacion-cookies": {
+    "blocks": ["flex-layout.row#dactivacion-cookies"]
+  },
+  "flex-layout.row#dactivacion-cookies": {
+    "children": ["rich-text#dactivacion-cookies"]
+  },
+  "rich-text#dactivacion-cookies": {
+    "props": {
+      "text": "# ¿Qué son las cookies?\n\n<br/> 'Las cookies' son pequeños datos que enviamos cuando visitas nuestra tienda. Las cookies nos ayudan a conocerte mejor y personalizar tu experiencia. Además, ayudan a protegerte a ti y a otros compradores del fraude..\n<br/>Configura tu navegador para aceptar cookies para que puedas comprar artículos, guardar artículos y recibir recomendaciones personalizadas. Así se se hace:\n-   [Google Chrome](https://support.google.com/accounts/answer/61416?hl=en)\n-   [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/delete-manage-cookies)\n-   [Safari](http://support.apple.com/kb/PH19214)\n-   [Mozilla/Firefox](https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences)"
+    }
+  }
+}

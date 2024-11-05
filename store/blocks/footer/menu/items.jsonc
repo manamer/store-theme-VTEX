@@ -1,0 +1,24 @@
+{
+  // LOGO
+  "flex-layout.row#footer-menu-items-logo": {
+    "children": ["flex-layout.col#logo-desktop"],
+    "props": { "preventHorizontalStretch": true }
+  },
+
+  // BOTTOM
+  "rich-text#footer-items-copyright": {
+    "props": {
+      "text": "© Copyright 2023 All Rights Reserved by Funkyfish",
+      "blockClass": [
+        "footer-items-bottom",
+        "footer-items-bottom-text-copyright"
+      ]
+    }
+  },
+  "rich-text#footer-items-payments": {
+    "props": {
+      "text": "Paga con tu tarjeta favorita: ![](https://placehold.co/60x20)",
+      "blockClass": ["footer-items-bottom", "footer-items-bottom-text-payments"]
+    }
+  }
+}

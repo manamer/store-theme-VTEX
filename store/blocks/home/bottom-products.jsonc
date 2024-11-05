@@ -1,0 +1,121 @@
+{
+  "flex-layout.row#home-bottom-products": {
+    "children": ["flex-layout.col#home-bottom-products"],
+    "props": {
+      "blockClass": "section"
+    }
+  },
+  "flex-layout.col#home-bottom-products": {
+    "children": [
+      "rich-text#home-bottom-products",
+      "flex-layout.row#home-bottom-products-tabs"
+    ]
+  },
+
+  "rich-text#home-bottom-products": {
+    "props": {
+      "text": "### Tengo que tenerlo",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#home-bottom-products-tabs": {
+    "children": ["tab-layout#home-bottom-products"],
+    "props": {
+      "marginTop": 5
+    }
+  },
+  "tab-layout#home-bottom-products": {
+    "children": [
+      "tab-list#home-bottom-products",
+      "tab-content#home-bottom-products"
+    ],
+    "props": {
+      "blockClass": "home-bottom-products"
+    }
+  },
+  "tab-list#home-bottom-products": {
+    "children": [
+      "tab-list.item#home-bottom-products-1",
+      "tab-list.item#home-bottom-products-2",
+      "tab-list.item#home-bottom-products-3"
+    ]
+  },
+  "tab-content#home-bottom-products": {
+    "children": [
+      "tab-content.item#home-bottom-products-1",
+      "tab-content.item#home-bottom-products-2",
+      "tab-content.item#home-bottom-products-3"
+    ]
+  },
+
+  // SLIDER LAYOUT
+  "slider-layout#home-bottom-products-carousel": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "usePagination": true
+    }
+  },
+
+  // FIRST
+  "tab-list.item#home-bottom-products-1": {
+    "props": {
+      "tabId": "first",
+      "label": "Lo más vendido",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-content.item#home-bottom-products-1": {
+    "children": ["list-context.product-list#home-bottom-products-1"],
+    "props": {
+      "tabId": "first"
+    }
+  },
+  "list-context.product-list#home-bottom-products-1": {
+    "blocks": ["product-summary.shelf#main"],
+    "children": ["slider-layout#home-bottom-products-carousel"]
+  },
+
+  // SECOND
+  "tab-list.item#home-bottom-products-2": {
+    "props": {
+      "tabId": "second",
+      "label": "Lo nuevo"
+    }
+  },
+  "tab-content.item#home-bottom-products-2": {
+    "children": ["list-context.product-list#home-bottom-products-2"],
+    "props": {
+      "tabId": "second"
+    }
+  },
+  "list-context.product-list#home-bottom-products-2": {
+    "blocks": ["product-summary.shelf#main"],
+    "children": ["slider-layout#home-bottom-products-carousel"]
+  },
+
+  // THIRD
+  "tab-list.item#home-bottom-products-3": {
+    "props": {
+      "tabId": "third",
+      "label": "Cuidado de la piel"
+    }
+  },
+  "tab-content.item#home-bottom-products-3": {
+    "children": ["list-context.product-list#home-bottom-products-3"],
+    "props": {
+      "tabId": "third"
+    }
+  },
+  "list-context.product-list#home-bottom-products-3": {
+    "blocks": ["product-summary.shelf#main"],
+    "children": ["slider-layout#home-bottom-products-carousel"]
+  }
+}

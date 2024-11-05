@@ -1,0 +1,103 @@
+{
+  "sticky-layout#header": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#header-sticky-main",
+      "flex-layout.row#header-menu"
+    ]
+  },
+
+  /***** MAIN *****/
+  "flex-layout.row#header-sticky-main": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "full"
+    },
+    "children": [
+      "flex-layout.col#search-bar",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#header-sticky-right-side"
+    ]
+  },
+
+  "flex-layout.col#search-bar": {
+    "children": ["search-bar"],
+    "props": {
+      "width": "33%",
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#logo-desktop": {
+    "children": ["logo#desktop"],
+    "props": {
+      "width": "33%",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#header-sticky-right-side": {
+    "children": ["flex-layout.row#header-sticky-right-side"],
+    "props": {
+      "width": "33%",
+      "verticalAlign": "middle",
+      "horizontalAlign": "right",
+      "preventHorizontalStretch": true
+    }
+  },
+  "flex-layout.row#header-sticky-right-side": {
+    "children": [
+      "login",
+      "minicart.v2",
+      "flex-layout.col#header-sticky-buttons"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "right"
+    }
+  },
+
+  "flex-layout.col#header-sticky-buttons": {
+    "children": ["flex-layout.row#header-sticky-buttons"],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.row#header-sticky-buttons": {
+    "children": [
+      "link#hedaer-sticky-buttons-gifts",
+      "link#hedaer-sticky-buttons-promos"
+    ],
+    "props": {
+      "colGap": 4
+    }
+  },
+
+  /***** MENU *****/
+  "flex-layout.row#header-menu": {
+    "children": ["flex-layout.col#menu-categories"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": false,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "full"
+    }
+  },
+  "flex-layout.col#menu-categories": {
+    "children": ["vtex.menu@2.x:menu#categories"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "flex-layout.row#categorias-accesorios-mobile": {
+    "children": [
+      "rich-text#title-categoria-accesorios",
+      "drawer#categoria-accesorios"
+    ],
+    "props": {
+      "width": "100%",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "rich-text#title-categoria-accesorios": {
+    "props": {
+      "text": "regalos",
+      "href": "/regalos",
+      "blockClass": "item-category-mobile"
+    }
+  },
+
+  "drawer#categoria-accesorios": {
+    "children": ["menu#drawer-accesorios"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#section-subcategoria-accesorios"
+    ]
+  },
+  "drawer-header#section-subcategoria-accesorios": {
+    "children": ["link#todo-categoria-accesorios", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-accesorios": {
+    "props": {
+      "label": "regalos",
+      "href": "/regalos",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  "menu#drawer-accesorios": {
+    "children": [
+      "link#hombre-estilo-carterasmochilas",
+      "link#hombre-estilo-billeteras",
+      "link#hombre-estilo-gorrossomnbreros",
+      "link#hombre-estilo-gafassol",
+      "link#hombre-estilo-termstaza",
+      "link#hombre-estilo-accescr",
+      "link#hombre-estilo-jumesa",
+      "link#hombre-estilo-technologia"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "link#hombre-estilo-carterasmochilas": {
+    "props": {
+      "label": "decoración",
+      "href": "/regalos/decoracion",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-billeteras": {
+    "props": {
+      "label": "cocina",
+      "href": "/regalos/cocina",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-gorrossomnbreros": {
+    "props": {
+      "label": "dormitorio",
+      "href": "/regalos/dormitorio",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-gafassol": {
+    "props": {
+      "label": "lámparas",
+      "href": "/regalos/lamparas",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-termstaza": {
+    "props": {
+      "label": "termos y tazas",
+      "href": "/regalos/termos-y-tazas",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-accescr": {
+    "props": {
+      "label": "Accesorios de escritorio",
+      "href": "/regalos/accesorios-de-escritorio",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-jumesa": {
+    "props": {
+      "label": "Juegos de mesa",
+      "href": "/regalos/juegos-de-mesa",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-technologia": {
+    "props": {
+      "label": "tecnología",
+      "href": "/regalos/tecnologia",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+
+  /* DRAWER 3 - ropa para dormir */
+  "flex-layout.row#subcategorias-accesorio-bisuteria-mobile": {
+    "children": [
+      "rich-text#title-subcategoria-accesorio-bisuteria",
+      "drawer#subcategoria-accesorio-bisuteria"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-accesorio-bisuteria": {
+    "props": {
+      "text": "Bisutería",
+      "blockClass": "item-category-mobile"
+    }
+  },
+
+  "drawer#subcategoria-accesorio-bisuteria": {
+    "children": ["menu#drawer-accesorio-bisuteria"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#hombre-subcategoria-item-accesorio-bisuteria"
+    ]
+  },
+  "drawer-header#hombre-subcategoria-item-accesorio-bisuteria": {
+    "children": ["link#accesorio-bisuteria", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#accesorio-bisuteria": {
+    "props": {
+      "label": "Bisutería",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  "menu#drawer-accesorio-bisuteria": {
+    "children": [
+      "link#hombre-estilo-bisucollatres",
+      "link#hombre-estilo-bisuaretes",
+      "link#hombre-estilo-bisupulseras",
+      "link#hombre-estilo-bisuanillos",
+      "link#hombre-estilo-bisumejoresamigas"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-bisucollatres": {
+    "props": {
+      "label": "collares",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-bisuaretes": {
+    "props": {
+      "label": "aretes",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-bisupulseras": {
+    "props": {
+      "label": "pulseras",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-bisuanillos": {
+    "props": {
+      "label": "anillos",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-bisumejoresamigas": {
+    "props": {
+      "label": "mejores amigas",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+
+  /* DRAWER 3 - ropa para el frio */
+  "flex-layout.row#subcategorias-accesorio-cabello-mobile": {
+    "children": [
+      "rich-text#title-subcategoria-accesorio-cabello",
+      "drawer#subcategoria-accesorio-cabello"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-accesorio-cabello": {
+    "props": {
+      "text": "accesorios de Cabello",
+      "blockClass": "item-category-mobile"
+    }
+  },
+
+  "drawer#subcategoria-accesorio-cabello": {
+    "children": ["menu#drawer-accesorio-cabello"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#hombre-subcategoria-item-accesorio-cabello"
+    ]
+  },
+  "drawer-header#hombre-subcategoria-item-accesorio-cabello": {
+    "children": ["link#accesorio-cabello", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#accesorio-cabello": {
+    "props": {
+      "label": "accesorios de Cabello",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  "menu#drawer-accesorio-cabello": {
+    "children": [
+      "link#hombre-estilo-cabdiademas",
+      "link#hombre-estilo-acceligban",
+      "link#hombre-estilo-cabplancasec"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-cabdiademas": {
+    "props": {
+      "label": "diademas y cintillos",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-acceligban": {
+    "props": {
+      "label": "LIGAS, BANDANAS & COLETES",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-cabplancasec": {
+    "props": {
+      "label": "plancha y secador de cabello",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+
+  //
+
+  "drawer#subcategoria-mujer-limpiadores": {
+    "children": ["menu#drawer-mujer-limpiadores"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#mujer-subcategoria-item-limpiadores"
+    ]
+  },
+
+  "menu#drawer-mujer-limpiadores": {
+    "children": [
+      "link#mujer-limpiadores-item-shampoo",
+      "link#mujer-limpiadores-item-silicona",
+      "link#mujer-limpiadores-item-kislimpieza",
+      "link#mujer-limpiadores-item-renovadores"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "item-subcategory-mobile"
+    }
+  }
+}

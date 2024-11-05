@@ -1,0 +1,79 @@
+{
+  "flex-layout.row#categorias-tecnologia-mobile": {
+    "children": [
+      "rich-text#title-categoria-tecnologia",
+      "drawer#categoria-tecnologia"
+    ],
+    "props": {
+      "width": "100%",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "rich-text#title-categoria-tecnologia": {
+    "props": {
+      "text": "carteras",
+      "href": "/carteras",
+
+      "blockClass": "item-category-mobile"
+    }
+  },
+
+  "drawer#categoria-tecnologia": {
+    "children": ["menu#drawer-tecnologia"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#section-subcategoria-tecnologia"
+    ]
+  },
+  "drawer-header#section-subcategoria-tecnologia": {
+    "children": ["link#todo-categoria-tecnologia", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-tecnologia": {
+    "props": {
+      "label": "carteras",
+      "href": "/carteras",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  "menu#drawer-tecnologia": {
+    "children": [
+      "link#hombre-estilo-tecnologiaacccelular",
+      "link#hombre-estilo-tecnologiaaudifonos",
+      "link#hombre-estilo-tecnologiaparlantaes"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "link#hombre-estilo-tecnologiaacccelular": {
+    "props": {
+      "label": "carteras",
+      "href": "/carteras/carteras",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-tecnologiaaudifonos": {
+    "props": {
+      "label": "mochilas",
+      "href": "/carteras/mochilas",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-tecnologiaparlantaes": {
+    "props": {
+      "label": "billeteras",
+      "href": "/carteras/billeteras",
+      "blockClass": "item-subcategory-mobile"
+    }
+  }
+}

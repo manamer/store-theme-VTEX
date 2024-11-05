@@ -1,0 +1,252 @@
+{
+  "menu-item#categories-ropa": {
+    "blocks": ["vtex.menu@2.x:submenu#categories-ropa"],
+    "props": {
+      "blockClass": "categories",
+      "itemProps": {
+        "text": "Seasons",
+        "href": "/seasons"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu#categories-ropa": {
+    "children": ["flex-layout.row#categories-ropa"],
+    "props": {
+      "width": "100%",
+      "blockClass": "subcategories"
+    }
+  },
+  "flex-layout.row#categories-ropa": {
+    "children": [
+      "flex-layout.col#categories-ropa-items",
+      "flex-layout.col#categories-ropa-images"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 9,
+      "blockClass": "subcategories"
+    }
+  },
+
+  "flex-layout.col#categories-ropa-items": {
+    "children": ["flex-layout.row#categories-ropa-items"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#categories-ropa-items": {
+    "children": [
+      "vtex.menu@2.x:menu#subcategory-para-dormir",
+      "vtex.menu@2.x:menu#subcategory-para-el-frio",
+      "vtex.menu@2.x:menu#subcategory-regreso-clases"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 0,
+      "blockClass": "subcategories-items"
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-ropa-varios": {
+    "children": [
+      "menu-item#subcategory-ropa-active",
+      "menu-item#subcategory-ropa-Bikinis",
+      "menu-item#subcategory-ropa-tyedye",
+      "menu-item#subcategory-ropa-pantuflas",
+      "menu-item#subcategory-ropa-interior",
+      "menu-item#subcategory-ropa-homewear"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item"
+    }
+  },
+  "menu-item#subcategory-ropa-active": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Active" }
+    }
+  },
+  "menu-item#subcategory-ropa-Bikinis": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Bikinis" }
+    }
+  },
+  "menu-item#subcategory-ropa-tyedye": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Tye Dye" }
+    }
+  },
+  "menu-item#subcategory-ropa-pantuflas": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Pantuflas" }
+    }
+  },
+  "menu-item#subcategory-ropa-interior": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Ropa interior" }
+    }
+  },
+  "menu-item#subcategory-ropa-homewear": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Homewear" }
+    }
+  },
+
+  // CUIDADO PERSONAL
+  "menu-item#subcategory-ropa-para-el-frio": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": {
+        "text": "Invierno",
+        "href": "/seasons/invierno"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-para-el-frio": {
+    "children": ["menu-item#subcategory-ropa-para-el-frio"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        {
+          "itemProps": { "text": "Gorros", "href": "/seasons/invierno/gorros" }
+        },
+        {
+          "itemProps": {
+            "text": "Bufandas",
+            "href": "/seasons/invierno/bufandas"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Orejeras",
+            "href": "/seasons/invierno/orejeras"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Guantes",
+            "href": "/seasons/invierno/guantes"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Cobijas",
+            "href": "/seasons/invierno/cobijas"
+          }
+        }
+      ]
+    }
+  },
+
+  // CUIDADO PERSONAL
+  "menu-item#subcategory-ropa-regreso-clases": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": {
+        "text": "Regreso a clases",
+        "href": "/seasons/regreso-a-clases"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-regreso-clases": {
+    "children": ["menu-item#subcategory-ropa-regreso-clases"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        {
+          "itemProps": {
+            "text": "Mochilas",
+            "href": "/seasons/regreso-a-clases/mochilas"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Cartucheras",
+            "href": "/seasons/regreso-a-clases/cartucheras"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Loncheras",
+            "href": "/seasons/regreso-a-clases/loncheras"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Papelería",
+            "href": "/seasons/regreso-a-clases/papeleria"
+          }
+        }
+      ]
+    }
+  },
+
+  // POR MARCAS
+  "menu-item#subcategory-ropa-para-dormir": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": {
+        "text": "Verano",
+        "href": "/seasons/verano"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-para-dormir": {
+    "children": ["menu-item#subcategory-ropa-para-dormir"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        {
+          "itemProps": { "text": "Bikinis", "href": "/seasons/verano/bikinis" }
+        },
+        {
+          "itemProps": {
+            "text": "Gafas de sol",
+            "href": "/seasons/verano/gafas-de-sol"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Sombreros",
+            "href": "/seasons/verano/sombreros"
+          }
+        }
+      ]
+    }
+  },
+
+  //  IMAGENS
+
+  "flex-layout.col#categories-ropa-images": {
+    "children": ["flex-layout.row#categories-ropa-images"]
+  },
+  "flex-layout.row#categories-ropa-images": {
+    "children": [
+      "image#categories-ropa-images-left",
+      "image#categories-ropa-images-right"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 5,
+      "blockClass": "subcategories-images"
+    }
+  },
+  "image#categories-ropa-images-left": {
+    "props": {
+      "src": "https://placehold.co/200x200"
+    }
+  },
+  "image#categories-ropa-images-right": {
+    "props": {
+      "src": "https://placehold.co/200x200"
+    }
+  }
+}

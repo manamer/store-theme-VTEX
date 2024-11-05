@@ -1,0 +1,14 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#home-banners",
+      "flex-layout.row#home-categories",
+      "flex-layout.row#home-principal-products",
+      "flex-layout.row#home-middle-banner",
+      "flex-layout.row#home-middle-products",
+      "flex-layout.row#home-facts",
+      "flex-layout.row#home-middle-cards",
+      "flex-layout.row#home-bottom-products"
+    ]
+  }
+}

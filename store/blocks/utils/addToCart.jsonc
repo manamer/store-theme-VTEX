@@ -1,0 +1,25 @@
+{
+  "add-to-cart-button": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button"
+    }
+  },
+
+  "add-to-cart-button#cart": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "text": "AGREGAR AL CARRITO",
+      "blockClass": "cart"
+    }
+  },
+
+  "add-to-cart-button#checkout": {
+    "props": {
+      "text": "COMPRAR",
+      "isOneClickBuy": true,
+      "blockClass": "checkout"
+    }
+  }
+}

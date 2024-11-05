@@ -1,0 +1,22 @@
+{
+  "flex-layout.row#pdp-prices": {
+    "children": ["flex-layout.col#pdp-prices"],
+    "props": { "marginBottom": 5 }
+  },
+  "flex-layout.col#pdp-prices": {
+    "children": ["product-list-price#pdp", "product-selling-price#pdp"]
+  },
+
+  "product-list-price#pdp": {
+    "props": {
+      "message": "{listPriceWithTax}",
+      "blockClass": "pdp"
+    }
+  },
+  "product-selling-price#pdp": {
+    "props": {
+      "message": "{sellingPriceWithTax}",
+      "blockClass": "pdp"
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "menu-item#categories-tecnologia": {
+    "blocks": ["vtex.menu@2.x:submenu#categories-tecnologia"],
+    "props": {
+      "blockClass": "categories",
+      "itemProps": {
+        "text": "Carteras",
+        "href": "/carteras/"
+      }
+    }
+  },
+  "vtex.menu@2.x:submenu#categories-tecnologia": {
+    "children": ["flex-layout.row#categories-tecnologia"],
+    "props": {
+      "width": "100%",
+      "blockClass": "subcategories"
+    }
+  },
+  "flex-layout.row#categories-tecnologia": {
+    "children": [
+      "flex-layout.col#categories-tecnologia-items",
+      "flex-layout.col#categories-tecnologia-images"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 9,
+      "blockClass": "subcategories"
+    }
+  },
+
+  "flex-layout.col#categories-tecnologia-items": {
+    "children": ["flex-layout.row#categories-tecnologia-items"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#categories-tecnologia-items": {
+    "children": [
+      "vtex.menu@2.x:menu#subcategory-tecnologia-varios-2",
+      "vtex.menu@2.x:menu#subcategory-tecnologia-varios-3",
+      "vtex.menu@2.x:menu#subcategory-tecnologia-varios"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 0,
+      "blockClass": "subcategories-items"
+    }
+  },
+  "vtex.menu@2.x:menu#subcategory-tecnologia-varios": {
+    "children": ["menu-item#subcategory-tecnologia-acceescrti"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item"
+    }
+  },
+  "menu-item#subcategory-tecnologia-decoracion": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Carteras" }
+    }
+  },
+  "menu-item#subcategory-tecnologia-cocina": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Mochilas" }
+    }
+  },
+  "menu-item#subcategory-tecnologia-dormitorio": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Billeteras" }
+    }
+  },
+
+  "vtex.menu@2.x:menu#subcategory-tecnologia-varios-2": {
+    "children": ["menu-item#subcategory-tecnologia-lamparas"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item"
+    }
+  },
+  "menu-item#subcategory-tecnologia-lamparas": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Carteras", "href": "/carteras/carteras" }
+    }
+  },
+  "menu-item#subcategory-tecnologia-ternostaz": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Termos y Tazas" }
+    }
+  },
+  "menu-item#subcategory-tecnologia-acceescrti": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Billeteras", "href": "/carteras/billeteras" }
+    }
+  },
+
+  "vtex.menu@2.x:menu#subcategory-tecnologia-varios-3": {
+    "children": ["menu-item#subcategory-tecnologia-juegosmesa"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item"
+    }
+  },
+  "menu-item#subcategory-tecnologia-juegosmesa": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "Mochilas", "href": "/carteras/mochilas" }
+    }
+  },
+
+  //  IMAGENS
+
+  "flex-layout.col#categories-tecnologia-images": {
+    "children": ["flex-layout.row#categories-tecnologia-images"]
+  },
+  "flex-layout.row#categories-tecnologia-images": {
+    "children": [
+      "image#categories-tecnologia-images-left",
+      "image#categories-tecnologia-images-right"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 5,
+      "blockClass": "subcategories-images"
+    }
+  },
+  "image#categories-tecnologia-images-left": {
+    "props": {
+      "src": "https://placehold.co/200x200"
+    }
+  },
+  "image#categories-tecnologia-images-right": {
+    "props": {
+      "src": "https://placehold.co/200x200"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "flex-layout.row#pdp-details": {
+    "children": ["flex-layout.col#pdp-details"]
+  },
+  "flex-layout.col#pdp-details": {
+    "children": [
+      "rich-text#pdp-details-title",
+      "flex-layout.row#pdp-details-info"
+    ],
+    "props": { "rowGap": 5 }
+  },
+
+  // TITTLE
+  "rich-text#pdp-details-title": {
+    "props": {
+      "text": "### Detalles del Producto",
+      "blockClass": "pdp-details-title"
+    }
+  },
+
+  // INFOMRATION
+  "flex-layout.row#pdp-details-info": {
+    "children": [
+      "flex-layout.col#pdp-details-info-description",
+      "flex-layout.col#pdp-details-info"
+    ],
+    "props": { "blockClass": "pdp-details-info", "colGap": 9, "rowGap": 7 }
+  },
+
+  "flex-layout.col#pdp-details-info-description": {
+    "children": [
+      "vtex.store-components:product-name#pdp-details-info-description-title",
+      "product-description"
+    ],
+    "props": { "width": "40%", "rowGap": 0 }
+  },
+  "vtex.store-components:product-name#pdp-details-info-description-title": {
+    "props": {
+      "blockClass": "pdp-details-description-title"
+    }
+  },
+  "product-description": {
+    "props": {
+      "collapseContent": false,
+      "showTitle": false
+    }
+  },
+
+  "flex-layout.col#pdp-details-info": {
+    "children": ["disclosure-layout-group#pdp-details-info"]
+  },
+
+  // specifications
+  "disclosure-layout-group#pdp-details-info": {
+    "children": ["flex-layout.row#pdp-details-info-specifications"]
+  },
+  "flex-layout.row#pdp-details-info-specifications": {
+    "children": ["flex-layout.col#pdp-details-info-specifications"],
+    "props": { "blockClass": "pdp-details-info-disclosure" }
+  },
+  "flex-layout.col#pdp-details-info-specifications": {
+    "children": ["disclosure-layout#pdp-details-info-specifications"]
+  },
+  "disclosure-layout#pdp-details-info-specifications": {
+    "children": [
+      "disclosure-trigger#pdp-details-info-specifications",
+      "disclosure-content#pdp-details-info-specifications"
+    ]
+  },
+  "disclosure-trigger#pdp-details-info-specifications": {
+    "children": ["rich-text#pdp-details-info-specifications-title"],
+    "props": { "as": "div", "blockClass": "pdp-details-info-disclosure" }
+  },
+  "rich-text#pdp-details-info-specifications-title": {
+    "props": {
+      "text": "Especificaciones",
+      "blockClass": "pdp-details-info-specifications"
+    }
+  },
+  "disclosure-content#pdp-details-info-specifications": {
+    "children": ["product-specification-group"],
+    "props": { "blockClass": "pdp-details-info-disclosure" }
+  }
+}

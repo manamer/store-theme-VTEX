@@ -1,0 +1,63 @@
+{
+  "flex-layout.row#footer-newsletter": {
+    "children": [
+      "flex-layout.col#footer-newsletter-text",
+      "flex-layout.col#footer-newsletter-form"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "blockClass": ["full", "section", "footer-newsletter"]
+    }
+  },
+
+  "flex-layout.col#footer-newsletter-text": {
+    "children": ["rich-text#footer-newsletter-text"],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+  "rich-text#footer-newsletter-text": {
+    "props": {
+      "text": "### Regístrate a nuesto Newsletter\nY sé el primero en conocer de nuestras promociones, lanzamientos, eventos y mucho más.",
+      "blockClass": "footer-newsletter-text"
+    }
+  },
+
+  "flex-layout.col#footer-newsletter-form": {
+    "children": ["newsletter-form"],
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    }
+  },
+  "newsletter-form": {
+    "children": [
+      "flex-layout.row#footer-newsletter-form",
+      "newsletter-checkbox-confirmation"
+    ]
+  },
+  "newsletter-checkbox-confirmation": {
+    "props": {
+      "checkboxLabel": "Acepto haber leido las {firstLink}.",
+      "firstLabelLink": {
+        "url": "/politicas-de-privacidad",
+        "text": "políticas de privacidad"
+      }
+    }
+  },
+  "flex-layout.row#footer-newsletter-form": {
+    "children": ["newsletter-input-email", "newsletter-submit"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Email"
+    }
+  }
+}

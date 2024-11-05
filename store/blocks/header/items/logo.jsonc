@@ -1,0 +1,17 @@
+{
+  "logo#desktop": {
+    "props": {
+      "title": "Funky Fish",
+      "href": "/",
+      "url": "assets/logo.png"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Funky Fish",
+      "href": "/",
+      "url": "assets/logo-mobile.png"
+    }
+  }
+}

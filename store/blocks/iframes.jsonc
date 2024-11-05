@@ -1,0 +1,28 @@
+{
+  "store.custom#our-stores": {
+    "children": ["flex-layout.row#iframe-our-stores"]
+  },
+  "flex-layout.row#iframe-our-stores": {
+    "children": ["iframe.dynamic-src#our-stores"]
+  },
+  "iframe.dynamic-src#our-stores": {
+    "props": {
+      "dynamicSrc": "https://gabydev.com/dev/funkyfish/mapa.html",
+      "width": "1000000",
+      "blockClass": "iframe-our-stores"
+    }
+  },
+
+  // CONTACT US
+  "store.custom#contact-us": {
+    "children": ["iframe#contact-us"]
+  },
+  "iframe#contact-us": {
+    "props": {
+      "src": "https://gabydev.com/dev/funkyfish/formulario/index.html",
+      "width": 1000000,
+      "height": 1000,
+      "blockClass": "iframe-contact-us"
+    }
+  }
+}

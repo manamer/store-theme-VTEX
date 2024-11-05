@@ -1,0 +1,17 @@
+{
+  "minicart.v2": {
+    "children": ["minicart-base-content"],
+    "props": {
+      "MinicartIcon": "icon#minicart",
+      "customPixelEventId": "add-to-cart-button"
+    }
+  },
+
+  "icon#minicart": {
+    "props": {
+      "id": "minicart",
+      "size": 22,
+      "viewBox": "0 0 22 22"
+    }
+  }
+}

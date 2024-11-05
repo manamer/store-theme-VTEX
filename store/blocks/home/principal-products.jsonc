@@ -1,0 +1,65 @@
+{
+  "flex-layout.row#home-principal-products": {
+    "children": ["flex-layout.col#home-principal-products"],
+    "props": {
+      "blockClass": "section"
+    }
+  },
+  "flex-layout.col#home-principal-products": {
+    "children": [
+      "flex-layout.row#home-principal-products-text",
+      "flex-layout.row#home-principal-products-carousel"
+    ]
+  },
+
+  /***** TEXT *****/
+  "flex-layout.row#home-principal-products-text": {
+    "children": [
+      "rich-text#home-principa-products-text-title",
+      "rich-text#home-principa-products-text-seemore"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "colGap": 7,
+      "horizontalAlign": "between"
+    }
+  },
+  "rich-text#home-principa-products-text-title": {
+    "props": {
+      "text": "### Descubre los mejores regalos\nRegalos Disponibles hasta agotar stock.",
+      "blockClass": "home-principal-products-text-title"
+    }
+  },
+  "rich-text#home-principa-products-text-seemore": {
+    "props": {
+      "text": "[DESCUBRE TODOS LOS REGALOS](#)",
+      "blockClass": "home-principal-products-text-seemore"
+    }
+  },
+
+  /***** CAROUSEL *****/
+  "flex-layout.row#home-principal-products-carousel": {
+    "children": ["list-context.product-list#home-principal-products-carousel"],
+    "props": {
+      "marginTop": 5
+    }
+  },
+  "list-context.product-list#home-principal-products-carousel": {
+    "blocks": ["product-summary.shelf#main"],
+    "children": ["slider-layout#home-principal-products-carousel"]
+  },
+  "slider-layout#home-principal-products-carousel": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "home-principal-products-carousel"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "flex-layout.row#footer-brands": {
+    "children": ["list-context.image-list#footer-brands"],
+    "props": {
+      "blockClass": "section"
+    }
+  },
+
+  "list-context.image-list#footer-brands": {
+    "children": ["slider-layout#footer-brands"],
+    "props": {
+      "height": 70,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://placehold.co/157x67"
+        },
+        {
+          "image": "https://placehold.co/157x67"
+        },
+        {
+          "image": "https://placehold.co/157x67"
+        },
+        {
+          "image": "https://placehold.co/157x67"
+        },
+        {
+          "image": "https://placehold.co/157x67"
+        },
+        {
+          "image": "https://placehold.co/157x67"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#footer-brands": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "always",
+      "centerMode": {
+        "desktop": "disabled",
+        "mobile": "to-the-left"
+      },
+      "blockClass": "footer-brands"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "flex-layout.row#home-categories": {
+    "children": [
+      "flex-layout.col#home-categories-text",
+      "flex-layout.col#home-categories-carousel"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "between",
+      "blockClass": "section"
+    }
+  },
+
+  /***** CATEGORIES *****/
+  "flex-layout.col#home-categories-text": {
+    "children": ["rich-text#home-categories-text"]
+  },
+  "rich-text#home-categories-text": {
+    "props": {
+      "text": "### Productos por categoría\nLos productos más populares del momento\n[Compra Ahora](#)",
+      "blockClass": "home-categories-text"
+    }
+  },
+
+  /***** CAROUSEL *****/
+  "flex-layout.col#home-categories-carousel": {
+    "children": ["slider-layout#home-categories-carousel"],
+    "props": {
+      "verticalAlign": "middle  "
+    }
+  },
+  "slider-layout#home-categories-carousel": {
+    "children": [
+      "flex-layout.row#home-categories-carrusel-1",
+      "flex-layout.row#home-categories-carrusel-2",
+      "flex-layout.row#home-categories-carrusel-3",
+      "flex-layout.row#home-categories-carrusel-4",
+      "flex-layout.row#home-categories-carrusel-5"
+    ],
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": false,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "usePagination": false,
+      "centerMode": "to-the-left",
+      "blockClass": "home-categories-carousel"
+    }
+  },
+
+  // ITEMS
+  "flex-layout.row#home-categories-carousel-image": {
+    "children": ["image#home-carousel-categories-carousel-image"],
+    "props": {
+      "blockClass": "home-categories-carousel-image"
+    }
+  },
+  "image#home-carousel-categories-carousel-image": {
+    "props": {
+      "src": "https://placehold.co/150"
+    }
+  },
+  "rich-text#home-carousel-categories-carousel-title": {
+    "props": {
+      "text": "CATEGORIA",
+      "blockClass": "home-categories-carousel-title"
+    }
+  },
+
+  // 1
+  "flex-layout.row#home-categories-carrusel-1": {
+    "title": "item",
+    "children": ["flex-layout.col#home-categories-carousel-1"]
+  },
+  "flex-layout.col#home-categories-carousel-1": {
+    "children": [
+      "flex-layout.row#home-categories-carousel-image",
+      "rich-text#home-carousel-categories-carousel-title"
+    ]
+  },
+
+  // 2
+  "flex-layout.row#home-categories-carrusel-2": {
+    "title": "item",
+    "children": ["flex-layout.col#home-categories-carousel-2"]
+  },
+  "flex-layout.col#home-categories-carousel-2": {
+    "children": [
+      "flex-layout.row#home-categories-carousel-image",
+      "rich-text#home-carousel-categories-carousel-title"
+    ]
+  },
+
+  // 3
+  "flex-layout.row#home-categories-carrusel-3": {
+    "title": "item",
+    "children": ["flex-layout.col#home-categories-carousel-3"]
+  },
+  "flex-layout.col#home-categories-carousel-3": {
+    "children": [
+      "flex-layout.row#home-categories-carousel-image",
+      "rich-text#home-carousel-categories-carousel-title"
+    ]
+  },
+
+  // 4
+  "flex-layout.row#home-categories-carrusel-4": {
+    "title": "item",
+    "children": ["flex-layout.col#home-categories-carousel-4"]
+  },
+  "flex-layout.col#home-categories-carousel-4": {
+    "children": [
+      "flex-layout.row#home-categories-carousel-image",
+      "rich-text#home-carousel-categories-carousel-title"
+    ]
+  },
+
+  // 5
+  "flex-layout.row#home-categories-carrusel-5": {
+    "title": "item",
+    "children": ["flex-layout.col#home-categories-carousel-5"]
+  },
+  "flex-layout.col#home-categories-carousel-5": {
+    "children": [
+      "flex-layout.row#home-categories-carousel-image",
+      "rich-text#home-carousel-categories-carousel-title"
+    ]
+  }
+}

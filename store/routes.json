@@ -1,0 +1,26 @@
+{
+  "store.custom#formas-de-pago": {
+    "path": "/formas-de-pago"
+  },
+  "store.custom#guia-envio": {
+    "path": "/guia-de-envio"
+  },
+  "store.custom#about-us": {
+    "path": "/nosotros"
+  },
+  "store.custom#contact-us": {
+    "path": "/contactanos"
+  },
+  "store.custom#dactivacion-cookies": {
+    "path": "/activacion-cookies"
+  },
+  "store.custom#dprivacy-policies": {
+    "path": "/politicas-de-privacidad"
+  },
+  "store.custom#change-policies": {
+    "path": "/politicas-de-cambios"
+  },
+  "store.custom#our-stores": {
+    "path": "/nuestras-tiendas"
+  }
+}

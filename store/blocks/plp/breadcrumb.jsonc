@@ -1,0 +1,12 @@
+{
+  "flex-layout.row#searchbread": {
+    "children": ["breadcrumb.search"],
+    "props": {
+      "marginTop": 6,
+      "marginBottom": 7,
+      "preventHorizontalStretch": true,
+      "fullWidth": true,
+      "blockClass": ["breadcrumb"]
+    }
+  }
+}

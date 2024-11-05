@@ -1,0 +1,184 @@
+{
+  "flex-layout.row#header-tags": {
+    "props": {
+      "blockClass": ["full", "header-tags"],
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#header-tags-left",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#header-tags-right"
+    ]
+  },
+  "vtex.menu@2.x:menu#header-tags-left": {
+    "children": [
+      "menu-item#header-tag-safe-purchase",
+      "menu-item#header-tag-whatsapp"
+    ]
+  },
+  "vtex.menu@2.x:menu#header-tags-right": {
+    "children": [
+      "menu-item#header-tag-stores",
+      "menu-item#header-tag-contact-us"
+    ]
+  },
+
+  "flex-layout.row#header-tags-mobile": {
+    "props": {
+      "blockClass": ["full", "header-tags", "header-tags-mobile"],
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": ["vtex.menu@2.x:menu#header-tags-mobile"]
+  },
+  "vtex.menu@2.x:menu#header-tags-mobile": {
+    "children": [
+      "menu-item#header-tag-safe-purchase-mobile",
+      "menu-item#header-tag-whatsapp-mobile"
+    ]
+  },
+
+  /********* ITEMS *********/
+  "menu-item#header-tag-safe-purchase": {
+    "props": {
+      "id": "menu-item-header-tag-safe-purchase",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "no-pointer",
+      "itemProps": {
+        "text": "Compra 100% Segura"
+      },
+      "iconProps": {
+        "id": "safe-purchase"
+      }
+    }
+  },
+  "menu-item#header-tag-safe-purchase-mobile": {
+    "props": {
+      "id": "menu-item-header-tag-safe-purchase",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "no-pointer",
+      "itemProps": {
+        "text": "Compra Segura"
+      },
+      "iconProps": {
+        "id": "safe-purchase"
+      }
+    }
+  },
+
+  "menu-item#header-tag-whatsapp": {
+    "props": {
+      "id": "menu-item-header-tag-whatsapp",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://api.whatsapp.com/send?phone=593994160039",
+        "noFollow": true,
+        "tagTitle": "Compra por Whatsapp +593 994160039",
+        "text": "Compra por Whatsapp +593 994160039"
+      },
+      "iconProps": {
+        "id": "whatsapp-white"
+      },
+      "blockClass": "wsp-tag"
+    }
+  },
+  "menu-item#header-tag-whatsapp-mobile": {
+    "props": {
+      "id": "menu-item-header-tag-whatsapp-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://api.whatsapp.com/send?phone=593994160039",
+        "noFollow": true,
+        "tagTitle": "Compra por Whatsapp",
+        "text": "Compra por Whatsapp"
+      },
+      "iconProps": {
+        "id": "whatsapp-white"
+      }
+    }
+  },
+
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": true,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+
+  "menu-item#header-tag-contact-us": {
+    "props": {
+      "id": "menu-item-header-tag-contact-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contactanos",
+        "tagTitle": "Contáctanos",
+        "text": "Contáctanos"
+      },
+      "iconProps": {
+        "id": "mail-white"
+      }
+    }
+  },
+
+  "menu-item#header-tag-stores": {
+    "props": {
+      "id": "menu-item-header-tag-stores",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nuestras-tiendas",
+        "noFollow": true,
+        "tagTitle": "Buscar tiendas",
+        "text": "Buscar tiendas"
+      },
+      "iconProps": {
+        "id": "locator-white"
+      }
+    }
+  },
+
+  "menu-item#vtex-website": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "visit vtex.com"
+      }
+    }
+  }
+}

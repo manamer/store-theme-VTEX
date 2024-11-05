@@ -1,0 +1,9 @@
+{
+  "sku-selector#pdp": {
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true,
+      "blockClass": "pdp"
+    }
+  }
+}

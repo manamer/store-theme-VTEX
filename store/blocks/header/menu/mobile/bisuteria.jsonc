@@ -1,0 +1,100 @@
+{
+  "flex-layout.row#categorias-hogar-mobile": {
+    "children": ["rich-text#title-categoria-hogar", "drawer#categoria-hogar"],
+    "props": {
+      "width": "100%",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "rich-text#title-categoria-hogar": {
+    "props": {
+      "text": "bisuteria",
+      "href": "/bisuteria",
+      "blockClass": "item-category-mobile"
+    }
+  },
+
+  "drawer#categoria-hogar": {
+    "children": ["menu#drawer-hogar"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": ["drawer-trigger", "drawer-header#section-subcategoria-hogar"]
+  },
+  "drawer-header#section-subcategoria-hogar": {
+    "children": ["link#todo-categoria-hogar", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-hogar": {
+    "props": {
+      "label": "bisuteria",
+      "href": "/bisuteria",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  "menu#drawer-hogar": {
+    "children": [
+      "link#hombre-estilo-hogardeco",
+      "link#hombre-estilo-hogarcocina",
+      "link#hombre-estilo-hogardormitorio",
+      "link#hombre-estilo-hogarlamparas",
+      "link#hombre-estilo-hogartermos"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "link#hombre-estilo-hogardeco": {
+    "props": {
+      "label": "collares",
+      "href": "/bisuteria/collares",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-hogarcocina": {
+    "props": {
+      "label": "aretes",
+      "href": "/bisuteria/aretes",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-hogardormitorio": {
+    "props": {
+      "label": "pulseras",
+      "href": "/bisuteria/pulseras",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-hogarlamparas": {
+    "props": {
+      "label": "anillos",
+      "href": "/bisuteria/anillos",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-hogartermos": {
+    "props": {
+      "label": "mejores amigas",
+      "href": "/bisuteria/mejores-amigas",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-hogaraccess": {
+    "props": {
+      "label": "hogar de escritorio",
+      "blockClass": "item-subcategory-mobile"
+    }
+  },
+  "link#hombre-estilo-hogarjuegos": {
+    "props": {
+      "label": "Juegos de mesa",
+      "blockClass": "item-subcategory-mobile"
+    }
+  }
+}

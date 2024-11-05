@@ -1,0 +1,13 @@
+{
+  "vtex.menu@2.x:menu#categories": {
+    "children": [
+      "menu-item#categories-belleza",
+      "menu-item#categories-ropa",
+      "menu-item#categories-accesorios",
+      "menu-item#categories-hogar",
+      "menu-item#categories-tecnologia",
+      "menu-item#categories-accesorioscabello",
+      "menu-item#categories-promos"
+    ]
+  }
+}

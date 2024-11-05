@@ -1,0 +1,22 @@
+{
+  "flex-layout.row#menu-mobile-belleza": {
+    "children": ["rich-text#menu-mobile-belleza", "drawer#menu-mobile-belleza"]
+  },
+  "rich-text#menu-mobile-belleza": { "props": { "text": "Belleza" } },
+  "drawer#menu-mobile-belleza": {
+    "blocks": ["drawer-trigger", "drawer-header#menu-mobile-belleza"],
+    "children": ["menu#drawer-belleza"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    }
+  },
+  "drawer-header#menu-mobile-belleza": {
+    "children": ["rich-text#menu-mobile-belleza-title"]
+  },
+  "rich-text#menu-mobile-belleza-title": { "props": { "text": "Belleza" } },
+  "menu#drawer-belleza": {
+    "children": ["rich-text#menu-mobile-belleza-title"]
+  }
+}

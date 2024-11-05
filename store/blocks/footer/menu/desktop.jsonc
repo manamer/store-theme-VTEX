@@ -1,0 +1,172 @@
+{
+  "flex-layout.row#footer-menu": {
+    "children": ["flex-layout.col#footer-menu"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["full", "footer-menu"]
+    }
+  },
+  "flex-layout.col#footer-menu": {
+    "children": [
+      "flex-layout.row#footer-menu-top",
+      "flex-layout.row#footer-menu-bottom"
+    ],
+    "props": { "preventVerticalStretch": true }
+  },
+
+  "flex-layout.row#footer-menu-top": {
+    "children": [
+      "flex-layout.col#footer-menu-top-socials",
+      "flex-layout.col#footer-menu-top-account",
+      "flex-layout.col#footer-menu-top-abbout",
+      "flex-layout.col#footer-menu-top-contact"
+    ],
+    "props": {
+      "blockClass": "footer-menu-top"
+    }
+  },
+
+  // SOCIALS
+  "flex-layout.col#footer-menu-top-socials": {
+    "children": [
+      "flex-layout.row#footer-menu-items-logo",
+      "flex-layout.row#footer-menu-top-socials-socials"
+    ],
+    "props": { "width": "30%", "preventVerticalStretch": true, "rowGap": 5 }
+  },
+  "flex-layout.row#footer-menu-top-socials-socials": {
+    "children": [
+      "image#footer-menu-top-socials-1",
+      "image#footer-menu-top-socials-2",
+      // "image#footer-menu-top-socials-3",
+      "image#footer-menu-top-socials-4",
+      "image#footer-menu-top-socials-5"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "colGap": 5
+    }
+  },
+  "image#footer-menu-top-socials-1": {
+    "props": { "src": "https://placehold.co/40x40" }
+  },
+  "image#footer-menu-top-socials-2": {
+    "props": { "src": "https://placehold.co/40x40" }
+  },
+  "image#footer-menu-top-socials-3": {
+    "props": { "src": "https://placehold.co/40x40" }
+  },
+  "image#footer-menu-top-socials-4": {
+    "props": { "src": "https://placehold.co/40x40" }
+  },
+  "image#footer-menu-top-socials-5": {
+    "props": { "src": "https://placehold.co/40x40" }
+  },
+
+  // ACCOUNT
+  "flex-layout.col#footer-menu-top-account": {
+    "children": ["rich-text#footer-contact-account"]
+  },
+  "rich-text#footer-contact-account": {
+    "props": {
+      "text": "#### MI CUENTA\n\n[Mi cuenta](/account)\n\n[Rastrea tu pedido](http://logistic.tramaco.com.ec:8080/slac-war/Tracking.jsf)\n\n[Métodos de pago](/formas-de-pago)\n\n[Guía de envío](/guia-de-envio)",
+      "blockClass": "footer-menu"
+    }
+  },
+  "menu-item#footer-account": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "MI CUENTA" }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-account-items": {
+    "children": ["menu-item#footer-account"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        { "itemProps": { "text": "Mi cuenta", "href": "/account" } },
+        {
+          "itemProps": {
+            "text": "Rastrea tu pedido",
+            "href": "http://logistic.tramaco.com.ec:8080/slac-war/Tracking.jsf"
+          }
+        },
+        {
+          "itemProps": { "text": "Métodos de pago", "href": "/formas-de-pago" }
+        },
+        { "itemProps": { "text": "Guia de envio", "href": "/guia-de-envio" } }
+      ]
+    }
+  },
+
+  // ABOUT
+  "flex-layout.col#footer-menu-top-abbout": {
+    "children": ["rich-text#footer-contact-about"]
+  },
+  "rich-text#footer-contact-about": {
+    "props": {
+      "text": "#### ACERCA\n\n[Nosotros](/nosotros)\n\n[Política de privacidad](/politicas-de-privacidad)\n\n[Política de devolución y cambios](/politicas-de-cambios)\n\n[Activación cookies](/activacion-cookies)",
+      "blockClass": "footer-menu"
+    }
+  },
+  "menu-item#footer-abbout": {
+    "props": {
+      "blockClass": "subcategory-title",
+      "itemProps": { "text": "ACERCA DE" }
+    }
+  },
+  "vtex.menu@2.x:menu#footer-abbout-items": {
+    "children": ["menu-item#footer-abbout"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item",
+      "items": [
+        { "itemProps": { "text": "Nosotros", "href": "/nosotros" } },
+        {
+          "itemProps": {
+            "text": "Politia de privacidad",
+            "href": "/politicas-de-privacidad"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Politica de devolucion y cambios",
+            "href": "/politicas-de-cambios"
+          }
+        },
+        {
+          "itemProps": {
+            "text": "Activacion cookies",
+            "href": "/activacion-cookies"
+          }
+        }
+      ]
+    }
+  },
+
+  // CONTACT
+  "flex-layout.col#footer-menu-top-contact": {
+    "children": ["rich-text#footer-contact-items"]
+  },
+  "rich-text#footer-contact-items": {
+    "props": {
+      "text": "#### CONTACTO\n\n**Dirección:**\nCalle Los Ciruelos OE1-127 y \nPanamericana Norte km.\n\n**Teléfono venta:**\n![](assets/icons/whatsapp-green.svg) 099-416-0039\n\n**Horario de atención al cliente:**\nLunes a Viernes de 9h00 / 18h00\n\n**Correo:**\nsupport@funkyfish.ec",
+      "blockClass": "footer-menu"
+    }
+  },
+
+  /////////////////////////////////////////////
+
+  "flex-layout.row#footer-menu-bottom": {
+    "children": [
+      "rich-text#footer-items-copyright",
+      "rich-text#footer-items-payments"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "between",
+      "blockClass": "footer-menu-bottom"
+    }
+  }
+}
