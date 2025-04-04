@@ -1,5 +1,6 @@
 {
   "sticky-layout#header-mobile": {
+    "title": "Main Mobile",
     "props": {
       "blockClass": ["sticky-header", "sticky-header-mobile"]
     },
@@ -29,6 +30,7 @@
   },
 
   "flex-layout.row#header-sticky-mobile-top": {
+    "title": "Top",
     "children": [
       "flex-layout.col#header-sticky-mobile-top-left",
       "flex-layout.col#header-sticky-mobile-top-right"
@@ -71,6 +73,7 @@
   },
 
   "flex-layout.row#header-sticky-mobile-bottom": {
+    "title": "Bottom",
     "children": [
       "flex-layout.col#header-sticky-mobile-bottom-left",
       "flex-layout.col#header-sticky-mobile-bottom-right"

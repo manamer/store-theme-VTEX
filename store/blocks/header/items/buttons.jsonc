@@ -1,11 +1,13 @@
 {
   "link#hedaer-sticky-buttons-gifts": {
+    "title": "Regalos",
     "props": {
       "label": "Regalos",
       "blockClass": ["header-sticky-buttons", "gifts"]
     }
   },
   "link#hedaer-sticky-buttons-promos": {
+    "title": "Promos",
     "props": {
       "label": "Promos",
       "blockClass": ["header-sticky-buttons", "promos"]

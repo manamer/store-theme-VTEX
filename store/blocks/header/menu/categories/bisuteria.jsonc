@@ -1,25 +1,26 @@
 {
-  "menu-item#categories-hogar": {
-    "blocks": ["vtex.menu@2.x:submenu#categories-hogar"],
+  "menu-item#categories-bisuteria": {
+    "title": "Bisuteria",
+    "blocks": ["vtex.menu@2.x:submenu#categories-bisuteria"],
     "props": {
       "blockClass": "categories",
       "itemProps": {
-        "text": "Bisutería",
+        "text": "bisuteria",
         "href": "/bisuteria"
       }
     }
   },
-  "vtex.menu@2.x:submenu#categories-hogar": {
-    "children": ["flex-layout.row#categories-hogar"],
+  "vtex.menu@2.x:submenu#categories-bisuteria": {
+    "children": ["flex-layout.row#categories-bisuteria"],
     "props": {
       "width": "100%",
       "blockClass": "subcategories"
     }
   },
-  "flex-layout.row#categories-hogar": {
+  "flex-layout.row#categories-bisuteria": {
     "children": [
-      "flex-layout.col#categories-hogar-items",
-      "flex-layout.col#categories-hogar-images"
+      "flex-layout.col#categories-bisuteria-items",
+      "flex-layout.col#categories-bisuteria-images"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -28,16 +29,15 @@
     }
   },
 
-  "flex-layout.col#categories-hogar-items": {
-    "children": ["flex-layout.row#categories-hogar-items"],
+  "flex-layout.col#categories-bisuteria-items": {
+    "children": ["flex-layout.row#categories-bisuteria-items"],
     "props": {
       "horizontalAlign": "center"
     }
   },
-  "flex-layout.row#categories-hogar-items": {
+  "flex-layout.row#categories-bisuteria-items": {
     "children": [
-      "vtex.menu@2.x:menu#subcategory-hogar-varios-2",
-      "vtex.menu@2.x:menu#subcategory-hogar-varios-3"
+      "vtex.menu@2.x:menu#subcategory-bisuteria-varios"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -45,91 +45,25 @@
       "blockClass": "subcategories-items"
     }
   },
-  "vtex.menu@2.x:menu#subcategory-hogar-varios": {
-    "children": ["menu-item#subcategory-hogar-acceescrti"],
+  "vtex.menu@2.x:menu#subcategory-bisuteria-varios": {
+    "title": "Bisuteria",
+    "children": [],
     "props": {
       "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "menu-item#subcategory-hogar-decoracion": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Mejores amigas",
-        "href": "/bisuteria/mejores-amigas"
-      }
-    }
-  },
-  "menu-item#subcategory-hogar-cocina": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Mejores amigos" }
-    }
-  },
-  "menu-item#subcategory-hogar-dormitorio": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Pulseras", "href": "/bisuteria/pulseras" }
-    }
-  },
-
-  "vtex.menu@2.x:menu#subcategory-hogar-varios-2": {
-    "children": [
-      "menu-item#subcategory-hogar-lamparas",
-      "menu-item#subcategory-hogar-ternostaz",
-      "menu-item#subcategory-hogar-dormitorio"
-    ],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "menu-item#subcategory-hogar-lamparas": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Collares", "href": "/bisuteria/collares" }
-    }
-  },
-  "menu-item#subcategory-hogar-ternostaz": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Aretes", "href": "/bisuteria/aretes" }
-    }
-  },
-  "menu-item#subcategory-hogar-acceescrti": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Pulseras" }
-    }
-  },
-
-  "vtex.menu@2.x:menu#subcategory-hogar-varios-3": {
-    "children": [
-      "menu-item#subcategory-hogar-juegosmesa",
-      "menu-item#subcategory-hogar-decoracion"
-    ],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "menu-item#subcategory-hogar-juegosmesa": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Anillos", "href": "/bisuteria/anillos" }
+      "blockClass": "subcategory-item",
+      "items": []
     }
   },
 
   //  IMAGENS
 
-  "flex-layout.col#categories-hogar-images": {
-    "children": ["flex-layout.row#categories-hogar-images"]
+  "flex-layout.col#categories-bisuteria-images": {
+    "children": ["flex-layout.row#categories-bisuteria-images"]
   },
-  "flex-layout.row#categories-hogar-images": {
+  "flex-layout.row#categories-bisuteria-images": {
     "children": [
-      "image#categories-hogar-images-left",
-      "image#categories-hogar-images-right"
+      "image#categories-bisuteria-images-left",
+      "image#categories-bisuteria-images-right"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -137,12 +71,12 @@
       "blockClass": "subcategories-images"
     }
   },
-  "image#categories-hogar-images-left": {
+  "image#categories-bisuteria-images-left": {
     "props": {
       "src": "https://placehold.co/200x200"
     }
   },
-  "image#categories-hogar-images-right": {
+  "image#categories-bisuteria-images-right": {
     "props": {
       "src": "https://placehold.co/200x200"
     }

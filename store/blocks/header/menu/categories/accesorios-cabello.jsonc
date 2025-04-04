@@ -1,6 +1,7 @@
 {
   "menu-item#categories-accesorioscabello": {
-    "blocks": ["vtex.menu@2.x:submenu#categories-tecnologia-b"],
+    "title": "Accesorios de Cabello",
+    "blocks": ["vtex.menu@2.x:submenu#categories-accesorioscabello"],
     "props": {
       "blockClass": "categories",
       "itemProps": {
@@ -9,17 +10,17 @@
       }
     }
   },
-  "vtex.menu@2.x:submenu#categories-tecnologia-b": {
-    "children": ["flex-layout.row#categories-tecnologia-b"],
+  "vtex.menu@2.x:submenu#categories-accesorioscabello": {
+    "children": ["flex-layout.row#categories-accesorioscabello"],
     "props": {
       "width": "100%",
       "blockClass": "subcategories"
     }
   },
-  "flex-layout.row#categories-tecnologia-b": {
+  "flex-layout.row#categories-accesorioscabello": {
     "children": [
-      "flex-layout.col#categories-tecnologia-items-b",
-      "flex-layout.col#categories-tecnologia-images-b"
+      "flex-layout.col#categories-accesorioscabello-items",
+      "flex-layout.col#categories-accesorioscabello-images"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -28,108 +29,41 @@
     }
   },
 
-  "flex-layout.col#categories-tecnologia-items-b": {
-    "children": ["flex-layout.row#categories-tecnologia-items-b"],
+  "flex-layout.col#categories-accesorioscabello-items": {
+    "children": ["flex-layout.row#categories-accesorioscabello-items"],
     "props": {
       "horizontalAlign": "center"
     }
   },
-  "flex-layout.row#categories-tecnologia-items-b": {
-    "children": ["vtex.menu@2.x:menu#subcategory-tecnologia-varios-2-b"],
+  "flex-layout.row#categories-accesorioscabello-items": {
+    "children": [
+      "vtex.menu@2.x:menu#subcategory-accesorioscabello-varios"
+    ],
     "props": {
       "preventHorizontalStretch": true,
       "colGap": 0,
       "blockClass": "subcategories-items"
     }
   },
-  "vtex.menu@2.x:menu#subcategory-tecnologia-varios-b": {
-    "children": ["menu-item#subcategory-tecnologia-planchasec-b"],
+  "vtex.menu@2.x:menu#subcategory-accesorioscabello-varios": {
+    "title": "Accesorios Cabello",
+    "children": [],
     "props": {
       "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "menu-item#subcategory-tecnologia-decoracion-b": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Carteras" }
-    }
-  },
-  "menu-item#subcategory-tecnologia-cocina-b": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Mochilas" }
-    }
-  },
-  "menu-item#subcategory-tecnologia-dormitorio-b": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Billeteras" }
-    }
-  },
-
-  "vtex.menu@2.x:menu#subcategory-tecnologia-varios-2-b": {
-    "children": [
-      "menu-item#subcategory-tecnologia-diademascintillos",
-      "menu-item#subcategory-tecnologia-ligasbanda",
-      "menu-item#subcategory-tecnologia-planchasec-b"
-    ],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "menu-item#subcategory-tecnologia-diademascintillos": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Diademas y cintillos",
-        "href": "/accesorios-de-cabello/diademas-y-cintillos"
-      }
-    }
-  },
-  "menu-item#subcategory-tecnologia-ternostaz-b": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Termos y Tazas" }
-    }
-  },
-  "menu-item#subcategory-tecnologia-planchasec-b": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Plancha y Secador de cabello",
-        "href": "/accesorios-de-cabello/plancha-y-secador-de-cabello"
-      }
-    }
-  },
-
-  "vtex.menu@2.x:menu#subcategory-tecnologia-varios-3-b": {
-    "children": ["menu-item#subcategory-tecnologia-ligasbanda"],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "menu-item#subcategory-tecnologia-ligasbanda": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Ligas, Bandanas y coletas",
-        "href": "/accesorios-de-cabello/ligas-bufandas-y-coletas"
-      }
+      "blockClass": "subcategory-item",
+      "items": []
     }
   },
 
   //  IMAGENS
 
-  "flex-layout.col#categories-tecnologia-images-b": {
-    "children": ["flex-layout.row#categories-tecnologia-images-b"]
+  "flex-layout.col#categories-accesorioscabello-images": {
+    "children": ["flex-layout.row#categories-accesorioscabello-images"]
   },
-  "flex-layout.row#categories-tecnologia-images-b": {
+  "flex-layout.row#categories-accesorioscabello-images": {
     "children": [
-      "image#categories-tecnologia-images-left-b",
-      "image#categories-tecnologia-images-right-b"
+      "image#categories-accesorioscabello-images-left",
+      "image#categories-accesorioscabello-images-right"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -137,12 +71,12 @@
       "blockClass": "subcategories-images"
     }
   },
-  "image#categories-tecnologia-images-left-b": {
+  "image#categories-accesorioscabello-images-left": {
     "props": {
       "src": "https://placehold.co/200x200"
     }
   },
-  "image#categories-tecnologia-images-right-b": {
+  "image#categories-accesorioscabello-images-right": {
     "props": {
       "src": "https://placehold.co/200x200"
     }

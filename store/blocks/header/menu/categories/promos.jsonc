@@ -1,5 +1,6 @@
 {
   "menu-item#categories-promos": {
+    "title": "Promos",
     "blocks": ["vtex.menu@2.x:submenu#categories-promos"],
     "props": {
       "blockClass": "categories",
@@ -43,134 +44,14 @@
     }
   },
   "vtex.menu@2.x:menu#subcategory-promos-varios": {
-    "children": [
-      "menu-item#subcategory-promos-carteras-mochilas",
-      "menu-item#subcategory-promos-billeteras",
-      "menu-item#subcategory-promos-gorrossombr",
-      "menu-item#subcategory-promos-gafassol"
-    ],
+    "title": "Promos",
+    "children": [],
     "props": {
       "orientation": "vertical",
-      "blockClass": "subcategory-item"
+      "blockClass": "subcategory-item",
+      "items": []
     }
   },
-  "vtex.menu@2.x:menu#subcategory-promos-varios-2": {
-    "children": [
-      "menu-item#subcategory-promos-accesoresctri",
-      "menu-item#subcategory-promos-juegosmesa",
-      "menu-item#subcategory-promos-tecnologia"
-    ],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "menu-item#subcategory-promos-carteras-mochilas": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Cambio de temporada",
-        "href": "/promos/cambio-de-temporada"
-      }
-    }
-  },
-  "menu-item#subcategory-promos-billeteras": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "20% OFF", "href": "/promos/20-off" }
-    }
-  },
-  "menu-item#subcategory-promos-gorrossombr": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "50% OFF", "href": "/promos/50-off" }
-    }
-  },
-  "menu-item#subcategory-promos-gafassol": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "70% OFF", "href": "/promos/70-off" }
-    }
-  },
-  "menu-item#subcategory-promos-termostazas": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Termas y tazas",
-        "href": "/regalos/termas-y-tazas"
-      }
-    }
-  },
-  "menu-item#subcategory-promos-accesoresctri": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "promos de escritorio",
-        "href": "/regalos/promos-de-escritorio"
-      }
-    }
-  },
-  "menu-item#subcategory-promos-juegosmesa": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Juegos de mesa",
-        "href": "/regalos/juegos-de-mesa"
-      }
-    }
-  },
-  "menu-item#subcategory-promos-tecnologia": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Tecnologia", "href": "/regalos/tecnologia" }
-    }
-  },
-
-  // CUIDADO PERSONAL
-  // "menu-item#subcategory-promos-bisuteria": {
-  //   "props": {
-  //     "blockClass": "subcategory-title",
-  //     "itemProps": {
-  //       "text": "Bisuteria"
-  //     }
-  //   }
-  // },
-  // "vtex.menu@2.x:menu#subcategory-bisuteria": {
-  //   "children": ["menu-item#subcategory-promos-bisuteria"],
-  //   "props": {
-  //     "orientation": "vertical",
-  //     "blockClass": "subcategory-item",
-  //     "items": [
-  //       { "itemProps": { "text": "Collares" } },
-  //       { "itemProps": { "text": "Aretes" } },
-  //       { "itemProps": { "text": "Pulseras" } },
-  //       { "itemProps": { "text": "Anillos" } },
-  //       { "itemProps": { "text": "Nejores amigas" } }
-  //     ]
-  //   }
-  // },
-
-  // // POR MARCAS
-  // "menu-item#subcategory-promos-para-el-cabello": {
-  //   "props": {
-  //     "blockClass": "subcategory-title",
-  //     "itemProps": {
-  //       "text": "promos de Cabello"
-  //     }
-  //   }
-  // },
-  // "vtex.menu@2.x:menu#subcategory-para-el-cabello": {
-  //   "children": ["menu-item#subcategory-promos-para-el-cabello"],
-  //   "props": {
-  //     "orientation": "vertical",
-  //     "blockClass": "subcategory-item",
-  //     "items": [
-  //       { "itemProps": { "text": "Diademas y cintillos" } },
-  //       { "itemProps": { "text": "Ligas, Bandas & Coletes" } },
-  //       { "itemProps": { "text": "Plancha y Secador" } }
-  //     ]
-  //   }
-  // },
 
   //  IMAGENS
 

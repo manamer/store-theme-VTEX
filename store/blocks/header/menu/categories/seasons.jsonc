@@ -1,6 +1,7 @@
 {
-  "menu-item#categories-ropa": {
-    "blocks": ["vtex.menu@2.x:submenu#categories-ropa"],
+  "menu-item#categories-seasons": {
+    "title": "Seasons",
+    "blocks": ["vtex.menu@2.x:submenu#categories-seasons"],
     "props": {
       "blockClass": "categories",
       "itemProps": {
@@ -9,17 +10,17 @@
       }
     }
   },
-  "vtex.menu@2.x:submenu#categories-ropa": {
-    "children": ["flex-layout.row#categories-ropa"],
+  "vtex.menu@2.x:submenu#categories-seasons": {
+    "children": ["flex-layout.row#categories-seasons"],
     "props": {
       "width": "100%",
       "blockClass": "subcategories"
     }
   },
-  "flex-layout.row#categories-ropa": {
+  "flex-layout.row#categories-seasons": {
     "children": [
-      "flex-layout.col#categories-ropa-items",
-      "flex-layout.col#categories-ropa-images"
+      "flex-layout.col#categories-seasons-items",
+      "flex-layout.col#categories-seasons-images"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -28,16 +29,16 @@
     }
   },
 
-  "flex-layout.col#categories-ropa-items": {
-    "children": ["flex-layout.row#categories-ropa-items"],
+  "flex-layout.col#categories-seasons-items": {
+    "children": ["flex-layout.row#categories-seasons-items"],
     "props": {
       "horizontalAlign": "center"
     }
   },
-  "flex-layout.row#categories-ropa-items": {
+  "flex-layout.row#categories-seasons-items": {
     "children": [
-      "vtex.menu@2.x:menu#subcategory-para-dormir",
-      "vtex.menu@2.x:menu#subcategory-para-el-frio",
+      "vtex.menu@2.x:menu#subcategory-verano",
+      "vtex.menu@2.x:menu#subcategory-invierno",
       "vtex.menu@2.x:menu#subcategory-regreso-clases"
     ],
     "props": {
@@ -46,59 +47,9 @@
       "blockClass": "subcategories-items"
     }
   },
-  "vtex.menu@2.x:menu#subcategory-ropa-varios": {
-    "children": [
-      "menu-item#subcategory-ropa-active",
-      "menu-item#subcategory-ropa-Bikinis",
-      "menu-item#subcategory-ropa-tyedye",
-      "menu-item#subcategory-ropa-pantuflas",
-      "menu-item#subcategory-ropa-interior",
-      "menu-item#subcategory-ropa-homewear"
-    ],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "menu-item#subcategory-ropa-active": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Active" }
-    }
-  },
-  "menu-item#subcategory-ropa-Bikinis": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Bikinis" }
-    }
-  },
-  "menu-item#subcategory-ropa-tyedye": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Tye Dye" }
-    }
-  },
-  "menu-item#subcategory-ropa-pantuflas": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Pantuflas" }
-    }
-  },
-  "menu-item#subcategory-ropa-interior": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Ropa interior" }
-    }
-  },
-  "menu-item#subcategory-ropa-homewear": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Homewear" }
-    }
-  },
 
-  // CUIDADO PERSONAL
-  "menu-item#subcategory-ropa-para-el-frio": {
+  // INVIERNO
+  "menu-item#subcategory-seasons-invierno": {
     "props": {
       "blockClass": "subcategory-title",
       "itemProps": {
@@ -107,14 +58,18 @@
       }
     }
   },
-  "vtex.menu@2.x:menu#subcategory-para-el-frio": {
-    "children": ["menu-item#subcategory-ropa-para-el-frio"],
+  "vtex.menu@2.x:menu#subcategory-invierno": {
+    "title": "Invierno",
+    "children": ["menu-item#subcategory-seasons-invierno"],
     "props": {
       "orientation": "vertical",
       "blockClass": "subcategory-item",
       "items": [
         {
-          "itemProps": { "text": "Gorros", "href": "/seasons/invierno/gorros" }
+          "itemProps": { 
+            "text": "Gorros", 
+            "href": "/seasons/invierno/gorros"
+          }
         },
         {
           "itemProps": {
@@ -144,8 +99,8 @@
     }
   },
 
-  // CUIDADO PERSONAL
-  "menu-item#subcategory-ropa-regreso-clases": {
+  // REGRESO A CLASES
+  "menu-item#subcategory-seasons-regreso-clases": {
     "props": {
       "blockClass": "subcategory-title",
       "itemProps": {
@@ -155,7 +110,8 @@
     }
   },
   "vtex.menu@2.x:menu#subcategory-regreso-clases": {
-    "children": ["menu-item#subcategory-ropa-regreso-clases"],
+    "title": "Regreso a clases",
+    "children": ["menu-item#subcategory-seasons-regreso-clases"],
     "props": {
       "orientation": "vertical",
       "blockClass": "subcategory-item",
@@ -188,8 +144,8 @@
     }
   },
 
-  // POR MARCAS
-  "menu-item#subcategory-ropa-para-dormir": {
+  // VERANO
+  "menu-item#subcategory-seasons-verano": {
     "props": {
       "blockClass": "subcategory-title",
       "itemProps": {
@@ -198,14 +154,18 @@
       }
     }
   },
-  "vtex.menu@2.x:menu#subcategory-para-dormir": {
-    "children": ["menu-item#subcategory-ropa-para-dormir"],
+  "vtex.menu@2.x:menu#subcategory-verano": {
+    "title": "Verano",
+    "children": ["menu-item#subcategory-seasons-verano"],
     "props": {
       "orientation": "vertical",
       "blockClass": "subcategory-item",
       "items": [
         {
-          "itemProps": { "text": "Bikinis", "href": "/seasons/verano/bikinis" }
+          "itemProps": { 
+            "text": "Bikinis", 
+            "href": "/seasons/verano/bikinis"
+          }
         },
         {
           "itemProps": {
@@ -225,13 +185,13 @@
 
   //  IMAGENS
 
-  "flex-layout.col#categories-ropa-images": {
-    "children": ["flex-layout.row#categories-ropa-images"]
+  "flex-layout.col#categories-seasons-images": {
+    "children": ["flex-layout.row#categories-seasons-images"]
   },
-  "flex-layout.row#categories-ropa-images": {
+  "flex-layout.row#categories-seasons-images": {
     "children": [
-      "image#categories-ropa-images-left",
-      "image#categories-ropa-images-right"
+      "image#categories-seasons-images-left",
+      "image#categories-seasons-images-right"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -239,12 +199,12 @@
       "blockClass": "subcategories-images"
     }
   },
-  "image#categories-ropa-images-left": {
+  "image#categories-seasons-images-left": {
     "props": {
       "src": "https://placehold.co/200x200"
     }
   },
-  "image#categories-ropa-images-right": {
+  "image#categories-seasons-images-right": {
     "props": {
       "src": "https://placehold.co/200x200"
     }

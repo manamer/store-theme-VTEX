@@ -1,6 +1,7 @@
 {
-  "menu-item#categories-accesorios": {
-    "blocks": ["vtex.menu@2.x:submenu#categories-accesorios"],
+  "menu-item#categories-regalos": {
+    "title": "Regalos",
+    "blocks": ["vtex.menu@2.x:submenu#categories-regalos"],
     "props": {
       "blockClass": "categories",
       "itemProps": {
@@ -9,17 +10,17 @@
       }
     }
   },
-  "vtex.menu@2.x:submenu#categories-accesorios": {
-    "children": ["flex-layout.row#categories-accesorios"],
+  "vtex.menu@2.x:submenu#categories-regalos": {
+    "children": ["flex-layout.row#categories-regalos"],
     "props": {
       "width": "100%",
       "blockClass": "subcategories"
     }
   },
-  "flex-layout.row#categories-accesorios": {
+  "flex-layout.row#categories-regalos": {
     "children": [
-      "flex-layout.col#categories-accesorios-items",
-      "flex-layout.col#categories-accesorios-images"
+      "flex-layout.col#categories-regalos-items",
+      "flex-layout.col#categories-regalos-images"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -28,16 +29,15 @@
     }
   },
 
-  "flex-layout.col#categories-accesorios-items": {
-    "children": ["flex-layout.row#categories-accesorios-items"],
+  "flex-layout.col#categories-regalos-items": {
+    "children": ["flex-layout.row#categories-regalos-items"],
     "props": {
       "horizontalAlign": "center"
     }
   },
-  "flex-layout.row#categories-accesorios-items": {
+  "flex-layout.row#categories-regalos-items": {
     "children": [
-      "vtex.menu@2.x:menu#subcategory-accesorios-varios",
-      "vtex.menu@2.x:menu#subcategory-accesorios-varios-2"
+      "vtex.menu@2.x:menu#subcategory-regalos-varios"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -45,143 +45,25 @@
       "blockClass": "subcategories-items"
     }
   },
-  "vtex.menu@2.x:menu#subcategory-accesorios-varios": {
-    "children": [
-      "menu-item#subcategory-accesorios-carteras-mochilas",
-      "menu-item#subcategory-accesorios-billeteras",
-      "menu-item#subcategory-accesorios-gorrossombr",
-      "menu-item#subcategory-accesorios-gafassol",
-      "menu-item#subcategory-accesorios-termostazas"
-    ],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "vtex.menu@2.x:menu#subcategory-accesorios-varios-2": {
-    "children": [
-      "menu-item#subcategory-accesorios-accesoresctri",
-      "menu-item#subcategory-accesorios-juegosmesa",
-      "menu-item#subcategory-accesorios-tecnologia"
-    ],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item"
-    }
-  },
-  "menu-item#subcategory-accesorios-carteras-mochilas": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Decoración", "href": "/regalos/decoracion" }
-    }
-  },
-  "menu-item#subcategory-accesorios-billeteras": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Cocina", "href": "/regalos/cocina" }
-    }
-  },
-  "menu-item#subcategory-accesorios-gorrossombr": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Dormitorio", "href": "/regalos/dormitorio" }
-    }
-  },
-  "menu-item#subcategory-accesorios-gafassol": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Lámparas", "href": "/regalos/lamparas" }
-    }
-  },
-  "menu-item#subcategory-accesorios-termostazas": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Termas y tazas",
-        "href": "/regalos/termas-y-tazas"
-      }
-    }
-  },
-  "menu-item#subcategory-accesorios-accesoresctri": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Accesorios de escritorio",
-        "href": "/regalos/accesorios-de-escritorio"
-      }
-    }
-  },
-  "menu-item#subcategory-accesorios-juegosmesa": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Juegos de mesa",
-        "href": "/regalos/juegos-de-mesa"
-      }
-    }
-  },
-  "menu-item#subcategory-accesorios-tecnologia": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": { "text": "Tecnología", "href": "/regalos/tecnologia" }
-    }
-  },
-
-  // CUIDADO PERSONAL
-  "menu-item#subcategory-accesorios-bisuteria": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Bisutería"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#subcategory-bisuteria": {
-    "children": ["menu-item#subcategory-accesorios-bisuteria"],
+  "vtex.menu@2.x:menu#subcategory-regalos-varios": {
+    "title": "Regalos",
+    "children": [],
     "props": {
       "orientation": "vertical",
       "blockClass": "subcategory-item",
-      "items": [
-        { "itemProps": { "text": "Collares" } },
-        { "itemProps": { "text": "Aretes" } },
-        { "itemProps": { "text": "Pulseras" } },
-        { "itemProps": { "text": "Anillos" } },
-        { "itemProps": { "text": "Nejores amigas" } }
-      ]
-    }
-  },
-
-  // POR MARCAS
-  "menu-item#subcategory-accesorios-para-el-cabello": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Accesorios de Cabello"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#subcategory-para-el-cabello": {
-    "children": ["menu-item#subcategory-accesorios-para-el-cabello"],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item",
-      "items": [
-        { "itemProps": { "text": "Diademas y cintillos" } },
-        { "itemProps": { "text": "Ligas, Bandas & Coletes" } },
-        { "itemProps": { "text": "Plancha y Secador" } }
-      ]
+      "items": []
     }
   },
 
   //  IMAGENS
 
-  "flex-layout.col#categories-accesorios-images": {
-    "children": ["flex-layout.row#categories-accesorios-images"]
+  "flex-layout.col#categories-regalos-images": {
+    "children": ["flex-layout.row#categories-regalos-images"]
   },
-  "flex-layout.row#categories-accesorios-images": {
+  "flex-layout.row#categories-regalos-images": {
     "children": [
-      "image#categories-accesorios-images-left",
-      "image#categories-accesorios-images-right"
+      "image#categories-regalos-images-left",
+      "image#categories-regalos-images-right"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -189,12 +71,12 @@
       "blockClass": "subcategories-images"
     }
   },
-  "image#categories-accesorios-images-left": {
+  "image#categories-regalos-images-left": {
     "props": {
       "src": "https://placehold.co/200x200"
     }
   },
-  "image#categories-accesorios-images-right": {
+  "image#categories-regalos-images-right": {
     "props": {
       "src": "https://placehold.co/200x200"
     }

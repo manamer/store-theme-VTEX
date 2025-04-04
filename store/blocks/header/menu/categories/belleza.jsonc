@@ -1,5 +1,6 @@
 {
   "menu-item#categories-belleza": {
+    "title": "Belleza",
     "blocks": ["vtex.menu@2.x:submenu#categories-belleza"],
     "props": {
       "blockClass": "categories",
@@ -36,7 +37,7 @@
   },
   "flex-layout.row#categories-belleza-items": {
     "children": [
-      "vtex.menu@2.x:menu#subcategory-belleza",
+      "vtex.menu@2.x:menu#subcategory-maquillaje",
       "vtex.menu@2.x:menu#subcategory-cuidado-personal",
       "vtex.menu@2.x:menu#subcategory-accesorios"
     ],
@@ -57,7 +58,8 @@
       }
     }
   },
-  "vtex.menu@2.x:menu#subcategory-belleza": {
+  "vtex.menu@2.x:menu#subcategory-maquillaje": {
+    "title": "Maquillaje",
     "children": ["menu-item#subcategory-belleza-maquillaje"],
     "props": {
       "orientation": "vertical",
@@ -69,14 +71,22 @@
             "href": "/belleza/maquillaje/labios"
           }
         },
-        { "itemProps": { "text": "Ojos", "href": "/belleza/maquillaje/ojos" } },
+        { "itemProps": { 
+            "text": "Ojos", 
+            "href": "/belleza/maquillaje/ojos"
+          }
+        },
         {
           "itemProps": {
             "text": "Rostro",
             "href": "/belleza/maquillaje/rostro"
           }
         },
-        { "itemProps": { "text": "Uñas", "href": "/belleza/maquillaje/unas" } }
+        { "itemProps": { 
+          "text": "Uñas", 
+          "href": "/belleza/maquillaje/unas"
+          }
+        }
       ]
     }
   },
@@ -92,6 +102,7 @@
     }
   },
   "vtex.menu@2.x:menu#subcategory-cuidado-personal": {
+    "title": "Cuidado Personal",
     "children": ["menu-item#subcategory-belleza-cuidoda-personal"],
     "props": {
       "orientation": "vertical",
@@ -119,84 +130,6 @@
     }
   },
 
-  // TRATAMIENTO CAPILAR
-  "menu-item#subcategory-belleza-tratamiento-capilar": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Tratamiento capilar",
-        "href": "/belleza/accesorios-de-belleza"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#subcategory-tratamiento-capilar": {
-    "children": ["menu-item#subcategory-belleza-tratamiento-capilar"],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item",
-      "items": [
-        {
-          "itemProps": {
-            "text": "Marc Anthony",
-            "href": "/belleza/accesorios-de-belleza/marc-"
-          }
-        },
-        {
-          "itemProps": {
-            "text": "Placenta life",
-            "href": "/belleza/accesorios-de-belleza/"
-          }
-        }
-      ]
-    }
-  },
-
-  // CUERPO
-  "menu-item#subcategory-belleza-cuerpo": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Cuerpo"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#subcategory-cuerpo": {
-    "children": ["menu-item#subcategory-belleza-cuerpo"],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item",
-      "items": [
-        { "itemProps": { "text": "Cremas corporales" } },
-        { "itemProps": { "text": "Cremas de mano" } },
-        { "itemProps": { "text": "Exfoliantes" } },
-        { "itemProps": { "text": "Lociones corporales" } }
-      ]
-    }
-  },
-
-  // POR MARCAS
-  "menu-item#subcategory-belleza-por-marcas": {
-    "props": {
-      "blockClass": "subcategory-title",
-      "itemProps": {
-        "text": "Maquillaje"
-      }
-    }
-  },
-  "vtex.menu@2.x:menu#subcategory-por-marcas": {
-    "children": ["menu-item#subcategory-belleza-por-marcas"],
-    "props": {
-      "orientation": "vertical",
-      "blockClass": "subcategory-item",
-      "items": [
-        { "itemProps": { "text": "Labios" } },
-        { "itemProps": { "text": "Ojos" } },
-        { "itemProps": { "text": "Rostro" } },
-        { "itemProps": { "text": "Uñas" } }
-      ]
-    }
-  },
-
   // ACCESORIOS
   "menu-item#subcategory-belleza-accesorios": {
     "props": {
@@ -208,6 +141,7 @@
     }
   },
   "vtex.menu@2.x:menu#subcategory-accesorios": {
+    "title": "Accesorios de belleza",
     "children": ["menu-item#subcategory-belleza-accesorios"],
     "props": {
       "orientation": "vertical",

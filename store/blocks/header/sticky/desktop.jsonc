@@ -11,6 +11,7 @@
 
   /***** MAIN *****/
   "flex-layout.row#header-sticky-main": {
+    "title": "Main",
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
@@ -84,6 +85,7 @@
 
   /***** MENU *****/
   "flex-layout.row#header-menu": {
+    "title": "Menu Categories",
     "children": ["flex-layout.col#menu-categories"],
     "props": {
       "horizontalAlign": "center",
