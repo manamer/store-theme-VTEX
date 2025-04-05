@@ -1,0 +1,36 @@
+{
+    "flex-layout.row#categorias-promos-mobile": {
+      "title": "promos",
+      "children": ["rich-text#title-categoria-promos", "drawer#categoria-promos"],
+      "props": {
+        "width": "100%",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "rich-text#title-categoria-promos": {
+      "title": "Title",
+      "props": {
+        "text": "Precios Locos",
+        "href": "/137?map=productClusterIds",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "drawer#categoria-promos": {
+      "children": ["vtex.menu@2.x:menu#promos-mobile"],
+      "props": {
+        "slideDirection": "horizontal",
+        "blockClass": "item-category-mobile",
+        "backdropMode": "none"
+      },
+      "blocks": ["drawer-trigger", "drawer-header#todo-categoria-promos"]
+    },
+    "vtex.menu@2.x:menu#promos-mobile": {
+      "title": "SubCategoria",
+      "children": [],
+      "props": {
+        "orientation": "vertical",
+        "blockClass": "subcategory-item-mobile",
+        "items": []
+      }
+    }
+  }

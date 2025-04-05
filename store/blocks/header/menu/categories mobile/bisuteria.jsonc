@@ -1,0 +1,36 @@
+{
+    "flex-layout.row#categorias-bisuteria-mobile": {
+      "title": "Bisuteria",
+      "children": ["rich-text#title-categoria-bisuteria", "drawer#categoria-bisuteria"],
+      "props": {
+        "width": "100%",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "rich-text#title-categoria-bisuteria": {
+      "title": "Title",
+      "props": {
+        "text": "Bisutería",
+        "href": "/bisuteria",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "drawer#categoria-bisuteria": {
+      "children": ["vtex.menu@2.x:menu#bisuteria-mobile"],
+      "props": {
+        "slideDirection": "horizontal",
+        "blockClass": "item-category-mobile",
+        "backdropMode": "none"
+      },
+      "blocks": ["drawer-trigger", "drawer-header#todo-categoria-bisuteria"]
+    },
+    "vtex.menu@2.x:menu#bisuteria-mobile": {
+      "title": "SubCategoria",
+      "children": [],
+      "props": {
+        "orientation": "vertical",
+        "blockClass": "subcategory-item-mobile",
+        "items": []
+      }
+    }
+  }

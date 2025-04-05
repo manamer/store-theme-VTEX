@@ -1,0 +1,36 @@
+{
+    "flex-layout.row#categorias-regalos-mobile": {
+      "title": "Regalos",
+      "children": ["rich-text#title-categoria-regalos", "drawer#categoria-regalos"],
+      "props": {
+        "width": "100%",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "rich-text#title-categoria-regalos": {
+      "title": "Title",
+      "props": {
+        "text": "regalos",
+        "href": "/regalos",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "drawer#categoria-regalos": {
+      "children": ["vtex.menu@2.x:menu#regalos-mobile"],
+      "props": {
+        "slideDirection": "horizontal",
+        "blockClass": "item-category-mobile",
+        "backdropMode": "none"
+      },
+      "blocks": ["drawer-trigger", "drawer-header#todo-categoria-regalos"]
+    },
+    "vtex.menu@2.x:menu#regalos-mobile": {
+      "title": "SubCategoria",
+      "children": [],
+      "props": {
+        "orientation": "vertical",
+        "blockClass": "subcategory-item-mobile",
+        "items": []
+      }
+    }
+  }

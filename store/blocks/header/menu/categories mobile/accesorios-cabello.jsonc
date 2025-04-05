@@ -1,0 +1,36 @@
+{
+    "flex-layout.row#categorias-accesorioscabello-mobile": {
+      "title": "accesorioscabello",
+      "children": ["rich-text#title-categoria-accesorioscabello", "drawer#categoria-accesorioscabello"],
+      "props": {
+        "width": "100%",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "rich-text#title-categoria-accesorioscabello": {
+      "title": "Title",
+      "props": {
+        "text": "Accesorios Cabello",
+        "href": "/accesorios-de-cabello",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "drawer#categoria-accesorioscabello": {
+      "children": ["vtex.menu@2.x:menu#accesorioscabello-mobile"],
+      "props": {
+        "slideDirection": "horizontal",
+        "blockClass": "item-category-mobile",
+        "backdropMode": "none"
+      },
+      "blocks": ["drawer-trigger", "drawer-header#todo-categoria-accesorioscabello"]
+    },
+    "vtex.menu@2.x:menu#accesorioscabello-mobile": {
+      "title": "SubCategoria",
+      "children": [],
+      "props": {
+        "orientation": "vertical",
+        "blockClass": "subcategory-item-mobile",
+        "items": []
+      }
+    }
+  }

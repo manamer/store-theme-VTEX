@@ -1,0 +1,36 @@
+{
+    "flex-layout.row#categorias-carteras-mobile": {
+      "title": "Carteras",
+      "children": ["rich-text#title-categoria-carteras", "drawer#categoria-carteras"],
+      "props": {
+        "width": "100%",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "rich-text#title-categoria-carteras": {
+      "title": "Title",
+      "props": {
+        "text": "carteras",
+        "href": "/carteras",
+        "blockClass": "item-category-mobile"
+      }
+    },
+    "drawer#categoria-carteras": {
+      "children": ["vtex.menu@2.x:menu#carteras-mobile"],
+      "props": {
+        "slideDirection": "horizontal",
+        "blockClass": "item-category-mobile",
+        "backdropMode": "none"
+      },
+      "blocks": ["drawer-trigger", "drawer-header#todo-categoria-carteras"]
+    },
+    "vtex.menu@2.x:menu#carteras-mobile": {
+      "title": "SubCategoria",
+      "children": [],
+      "props": {
+        "orientation": "vertical",
+        "blockClass": "subcategory-item-mobile",
+        "items": []
+      }
+    }
+  }

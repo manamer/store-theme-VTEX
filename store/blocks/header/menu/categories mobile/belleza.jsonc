@@ -1,0 +1,159 @@
+{
+  "flex-layout.row#categorias-belleza-mobile": {
+    "title": "Belleza",
+    "children": ["rich-text#title-categoria-belleza", "drawer#categoria-belleza"],
+    "props": {
+      "width": "100%",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "rich-text#title-categoria-belleza": {
+    "title": "Title",
+    "props": {
+      "text": "BELLEZA",
+      "href": "/belleza",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "drawer#categoria-belleza": {
+    "children": ["menu#drawer-belleza"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": ["drawer-trigger", "drawer-header#todo-categoria-belleza"]
+  },
+
+  /* CATEGORIA BELLEZA */
+
+  "menu#drawer-belleza": {
+    "title": "SubCategoria",
+    "children": [
+      "flex-layout.row#subcategorias-belleza-maquillaje-mobile",
+      "flex-layout.row#subcategorias-belleza-cuidadopersonal-mobile",
+      "flex-layout.row#subcategorias-belleza-accesorios-mobile"
+    ],
+    "props": { "orientation": "vertical" }
+  },
+
+  /* DRAWER 1 - MAQUILLAJE */
+
+  "flex-layout.row#subcategorias-belleza-maquillaje-mobile": {
+    "title": "Maquillaje",
+    "children": [
+      "rich-text#title-subcategoria-belleza-maquillaje",
+      "drawer#subcategoria-belleza-maquillaje-mobile"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-belleza-maquillaje": {
+    "title": "Title",
+    "props": {
+      "text": "MAQUILLAJE",
+      "href": "/belleza/maquillaje",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "drawer#subcategoria-belleza-maquillaje-mobile": {
+    "children": ["vtex.menu@2.x:menu#belleza-maquillaje-mobile"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#belleza-todo-maquillaje"
+    ]
+  },
+  "vtex.menu@2.x:menu#belleza-maquillaje-mobile": {
+    "title": "SubCategoria",
+    "children": [],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item-mobile",
+      "items": []
+    }
+  },
+
+  /* DRAWER 2 - CUIDADO PERSONAL */
+
+  "flex-layout.row#subcategorias-belleza-cuidadopersonal-mobile": {
+    "title": "Cuidado Personal",
+    "children": [
+      "rich-text#title-subcategoria-belleza-cuidadopersonal",
+      "drawer#subcategoria-belleza-cuidadopersonal-mobile"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-belleza-cuidadopersonal": {
+    "title": "Title",
+    "props": {
+      "text": "CUIDADO PERSONAL",
+      "href": "/belleza/cuidado-personal",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "drawer#subcategoria-belleza-cuidadopersonal-mobile": {
+    "children": ["vtex.menu@2.x:menu#belleza-cuidadopersonal-mobile"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#belleza-todo-cuidadopersonal"
+    ]
+  },
+  "vtex.menu@2.x:menu#belleza-cuidadopersonal-mobile": {
+    "title": "SubCategoria",
+    "children": [],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item-mobile",
+      "items": []
+    }
+  },
+
+  /* DRAWER 3 - ACCESORIOS DE BELLEZA */
+
+  "flex-layout.row#subcategorias-belleza-accesorios-mobile": {
+    "title": "Accesorios de Belleza",
+    "children": [
+      "rich-text#title-subcategoria-belleza-accesorios",
+      "drawer#subcategoria-belleza-accesorios-mobile"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-belleza-accesorios": {
+    "title": "Title",
+    "props": {
+      "text": "ACCESORIOS DE BELLEZA",
+      "href": "/belleza/accesorios-de-belleza",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "drawer#subcategoria-belleza-accesorios-mobile": {
+    "children": ["vtex.menu@2.x:menu#belleza-accesorios-mobile"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#belleza-todo-accesorios"
+    ]
+  },
+  "vtex.menu@2.x:menu#belleza-accesorios-mobile": {
+    "title": "SubCategoria",
+    "children": [],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item-mobile",
+      "items": []
+    }
+  }
+}

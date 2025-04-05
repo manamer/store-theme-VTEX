@@ -1,0 +1,257 @@
+{
+  "drawer-trigger": {
+    "children": ["image#angle-right"]
+  },
+
+  "image#angle-right": {
+    "title": "Row",
+    "props": {
+      "src": "assets/icons/angle-right-solid.svg",
+      "width": "10px"
+    }
+  },
+
+  /* CATEGORIA BELLEZA */
+
+  "drawer-header#todo-categoria-belleza": {
+    "children": ["link#todo-categoria-belleza", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-belleza": {
+    "title": "Regresar",
+    "props": {
+      "href": "/belleza",
+      "label": "BELLEZA",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* DRAWER 1 - MAQUILLAJE */
+
+  "drawer-header#belleza-todo-maquillaje": {
+    "children": ["link#belleza-todo-maquillaje", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#belleza-todo-maquillaje": {
+    "title": "Regresar",
+    "props": {
+      "href": "/belleza/maquillaje",
+      "label": "MAQUILLAJE",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* DRAWER 2 - CUIDADO PERSONAL */
+
+  "drawer-header#belleza-todo-cuidadopersonal": {
+    "children": [
+      "link#belleza-todo-cuidadopersonal",
+      "drawer-close-button"
+    ],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#belleza-todo-cuidadopersonal": {
+    "title": "Regresar",
+    "props": {
+      "href": "/belleza/cuidado-personal",
+      "label": "CUIDADO PERSONAL",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* DRAWER 3 - ACCESORIOS DE BELLEZA */
+
+  "drawer-header#belleza-todo-accesorios": {
+    "children": ["link#belleza-todo-accesorios", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#belleza-todo-accesorios": {
+    "title": "Regresar",
+    "props": {
+      "href": "/belleza/accesorios-de-belleza",
+      "label": "ACCESORIOS DE BELLEZA",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* CATEGORIA SEASONS */
+
+  "drawer-header#todo-categoria-seasons": {
+    "children": ["link#todo-categoria-seasons", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-seasons": {
+    "title": "Regresar",
+    "props": {
+      "href": "/seasons",
+      "label": "Seasons",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* DRAWER 1 - VERANO */
+
+  "drawer-header#seasons-todo-verano": {
+    "children": ["link#seasons-todo-verano", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#seasons-todo-verano": {
+    "title": "Regresar",
+    "props": {
+      "href": "/seasons/verano",
+      "label": "verano",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* DRAWER 2 - INVIERNO */
+
+  "drawer-header#seasons-todo-invierno": {
+    "children": [
+      "link#seasons-todo-invierno",
+      "drawer-close-button"
+    ],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#seasons-todo-invierno": {
+    "title": "Regresar",
+    "props": {
+      "href": "/seasons/invierno",
+      "label": "INVIERNO",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* DRAWER 3 - REGRESO A CLASES */
+
+  "drawer-header#seasons-todo-regresoaclases": {
+    "children": ["link#seasons-todo-regresoaclases", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#seasons-todo-regresoaclases": {
+    "title": "Regresar",
+    "props": {
+      "href": "/seasons/regreso-a-clases",
+      "label": "REGRESO A CLASES",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* DRAWER 3 - ORGANIZADORES */
+
+  "drawer-header#seasons-todo-organizadores": {
+    "children": ["link#seasons-todo-organizadores", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#seasons-todo-organizadores": {
+    "title": "Regresar",
+    "props": {
+      "href": "/seasons/regreso-a-clases",
+      "label": "REGRESO A CLASES",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* CATEGORIA REGALOS */
+
+  "drawer-header#todo-categoria-regalos": {
+    "children": ["link#todo-categoria-regalos", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-regalos": {
+    "title": "Regresar",
+    "props": {
+      "href": "/regalos",
+      "label": "REGALOS",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* CATEGORIA BISUTERIA */
+
+  "drawer-header#todo-categoria-bisuteria": {
+    "children": ["link#todo-categoria-bisuteria", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-bisuteria": {
+    "title": "Regresar",
+    "props": {
+      "href": "/bisuteria",
+      "label": "BISUTERÍA",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* CATEGORIA CARTERAS */
+
+  "drawer-header#todo-categoria-carteras": {
+    "children": ["link#todo-categoria-carteras", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-carteras": {
+    "title": "Regresar",
+    "props": {
+      "href": "/carteras",
+      "label": "CARTERAS",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* CATEGORIA ACCESORIOS CABELLO */
+
+  "drawer-header#todo-categoria-accesorioscabello": {
+    "children": ["link#todo-categoria-accesorioscabello", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-accesorioscabello": {
+    "title": "Regresar",
+    "props": {
+      "href": "/accesorios-de-cabello",
+      "label": "ACCESORIOS DE CABELLO",
+      "blockClass": "todo-item-category-mobile"
+    }
+  },
+
+  /* CATEGORIA PROMOS */
+
+  "drawer-header#todo-categoria-promos": {
+    "children": ["link#todo-categoria-promos", "drawer-close-button"],
+    "props": {
+      "blockClass": ["header-drawer", "header-drawer-arrow-back"]
+    }
+  },
+  "link#todo-categoria-promos": {
+    "title": "Regresar",
+    "props": {
+      "href": "/137?map=productClusterIds",
+      "label": "PRECIOS LOCOS",
+      "blockClass": "todo-item-category-mobile"
+    }
+  }
+}

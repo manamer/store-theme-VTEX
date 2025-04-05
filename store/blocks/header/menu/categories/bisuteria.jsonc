@@ -3,9 +3,9 @@
     "title": "Bisuteria",
     "blocks": ["vtex.menu@2.x:submenu#categories-bisuteria"],
     "props": {
-      "blockClass": "categories",
+      "blockClass": ["categories","varios"],
       "itemProps": {
-        "text": "bisuteria",
+        "text": "Bisutería",
         "href": "/bisuteria"
       }
     }

@@ -3,7 +3,7 @@
     "title": "Regalos",
     "blocks": ["vtex.menu@2.x:submenu#categories-regalos"],
     "props": {
-      "blockClass": "categories",
+      "blockClass": ["categories","varios"],
       "itemProps": {
         "text": "Regalos",
         "href": "/regalos"

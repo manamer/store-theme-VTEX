@@ -1,0 +1,25 @@
+{
+  /***** MOBILE *****/
+  "drawer#categoria-principal": {
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "section-items-category"
+    },
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "flex-layout.row#categorias-belleza-mobile",
+      "flex-layout.row#categorias-seasons-mobile",
+      "flex-layout.row#categorias-regalos-mobile",
+      "flex-layout.row#categorias-bisuteria-mobile",
+      "flex-layout.row#categorias-carteras-mobile",
+      "flex-layout.row#categorias-accesorioscabello-mobile",
+      "flex-layout.row#categorias-promos-mobile"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  }
+}

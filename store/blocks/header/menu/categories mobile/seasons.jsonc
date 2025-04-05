@@ -1,0 +1,200 @@
+{
+  "flex-layout.row#categorias-seasons-mobile": {
+    "title": "Seasons",
+    "children": ["rich-text#title-categoria-seasons", "drawer#categoria-seasons"],
+    "props": {
+      "width": "100%",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "rich-text#title-categoria-seasons": {
+    "title": "Title",
+    "props": {
+      "text": "seasons",
+      "href": "/seasons",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "drawer#categoria-seasons": {
+    "children": ["menu#drawer-seasons"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": ["drawer-trigger", "drawer-header#todo-categoria-seasons"]
+  },
+
+  /* CATEGORIA SEASONS */
+
+  "menu#drawer-seasons": {
+    "title": "SubCategoria",
+    "children": [
+      "flex-layout.row#subcategorias-seasons-verano-mobile",
+      "flex-layout.row#subcategorias-seasons-invierno-mobile",
+      "flex-layout.row#subcategorias-seasons-regresoaclases-mobile",
+      "flex-layout.row#subcategorias-seasons-organizadores-mobile"
+    ],
+    "props": { "orientation": "vertical" }
+  },
+
+  /* DRAWER 1 - VERANO */
+
+  "flex-layout.row#subcategorias-seasons-verano-mobile": {
+    "title": "Verano",
+    "children": [
+      "rich-text#title-subcategoria-seasons-verano",
+      "drawer#subcategoria-seasons-verano-mobile"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-seasons-verano": {
+    "title": "Title",
+    "props": {
+      "text": "Verano",
+      "href": "/seasons/verano",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "drawer#subcategoria-seasons-verano-mobile": {
+    "children": ["vtex.menu@2.x:menu#seasons-verano-mobile"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#seasons-todo-verano"
+    ]
+  },
+  "vtex.menu@2.x:menu#seasons-verano-mobile": {
+    "title": "SubCategoria",
+    "children": [],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item-mobile",
+      "items": []
+    }
+  },
+
+  /* DRAWER 2 - INVIERNO */
+
+  "flex-layout.row#subcategorias-seasons-invierno-mobile": {
+    "title": "Invierno",
+    "children": [
+      "rich-text#title-subcategoria-seasons-invierno",
+      "drawer#subcategoria-seasons-invierno-mobile"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-seasons-invierno": {
+    "title": "Title",
+    "props": {
+      "text": "INVIERNO",
+      "href": "/seasons/invierno",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "drawer#subcategoria-seasons-invierno-mobile": {
+    "children": ["vtex.menu@2.x:menu#seasons-invierno-mobile"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#seasons-todo-invierno"
+    ]
+  },
+  "vtex.menu@2.x:menu#seasons-invierno-mobile": {
+    "title": "SubCategoria",
+    "children": [],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item-mobile",
+      "items": []
+    }
+  },
+
+  /* DRAWER 3 - REGRESO A CLASES */
+
+  "flex-layout.row#subcategorias-seasons-regresoaclases-mobile": {
+    "title": "Regreso a clases",
+    "children": [
+      "rich-text#title-subcategoria-seasons-regresoaclases",
+      "drawer#subcategoria-seasons-regresoaclases-mobile"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-seasons-regresoaclases": {
+    "title": "Title",
+    "props": {
+      "text": "Regreso a clases",
+      "href": "/seasons/regreso-a-clases",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "drawer#subcategoria-seasons-regresoaclases-mobile": {
+    "children": ["vtex.menu@2.x:menu#seasons-regresoaclases-mobile"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#seasons-todo-regresoaclases"
+    ]
+  },
+  "vtex.menu@2.x:menu#seasons-regresoaclases-mobile": {
+    "title": "SubCategoria",
+    "children": [],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item-mobile",
+      "items": []
+    }
+  },
+
+  /* DRAWER 4 - ORGANIZADORES */
+
+  "flex-layout.row#subcategorias-seasons-organizadores-mobile": {
+    "title": "Organizadores",
+    "children": [
+      "rich-text#title-subcategoria-seasons-organizadores",
+      "drawer#subcategoria-seasons-organizadores-mobile"
+    ],
+    "props": { "blockClass": "item-category-mobile" }
+  },
+  "rich-text#title-subcategoria-seasons-organizadores": {
+    "title": "Title",
+    "props": {
+      "text": "Organizadores de Viaje",
+      "href": "/seasons/organizadores",
+      "blockClass": "item-category-mobile"
+    }
+  },
+  "drawer#subcategoria-seasons-organizadores-mobile": {
+    "children": ["vtex.menu@2.x:menu#seasons-organizadores-mobile"],
+    "props": {
+      "slideDirection": "horizontal",
+      "blockClass": "item-category-mobile",
+      "backdropMode": "none"
+    },
+    "blocks": [
+      "drawer-trigger",
+      "drawer-header#seasons-todo-organizadores"
+    ]
+  },
+  "vtex.menu@2.x:menu#seasons-organizadores-mobile": {
+    "title": "SubCategoria",
+    "children": [],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "subcategory-item-mobile",
+      "items": []
+    }
+  }
+}
