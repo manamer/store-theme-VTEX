@@ -164,8 +164,8 @@
   "link#seasons-todo-organizadores": {
     "title": "Regresar",
     "props": {
-      "href": "/seasons/regreso-a-clases",
-      "label": "REGRESO A CLASES",
+      "href": "/seasons/organizadores",
+      "label": "Organizadores",
       "blockClass": "todo-item-category-mobile"
     }
   },

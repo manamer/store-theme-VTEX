@@ -1,9 +1,9 @@
 {
-  "menu-item#categories-promos": {
+  "menu-item#categories-promociones": {
     "title": "Promos",
     "blocks": ["vtex.menu@2.x:submenu#categories-promos"],
     "props": {
-      "blockClass": "categories",
+      "blockClass": ["categories","varios"],
       "itemProps": {
         "text": "Promos",
         "href": "/promos"
@@ -78,5 +78,4 @@
     "props": {
       "src": "https://placehold.co/200x200"
     }
-  }
-}
+ 

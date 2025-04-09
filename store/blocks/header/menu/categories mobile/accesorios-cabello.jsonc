@@ -1,6 +1,6 @@
 {
     "flex-layout.row#categorias-accesorioscabello-mobile": {
-      "title": "accesorioscabello",
+      "title": "Accesorios de Cabello",
       "children": ["rich-text#title-categoria-accesorioscabello", "drawer#categoria-accesorioscabello"],
       "props": {
         "width": "100%",

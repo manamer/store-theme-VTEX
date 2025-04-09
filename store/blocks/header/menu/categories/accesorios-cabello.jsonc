@@ -1,9 +1,9 @@
 {
-  "menu-item#categories-accesorioscabello": {
+  "menu-item#categories-accesorios-cabello": {
     "title": "Accesorios de Cabello",
     "blocks": ["vtex.menu@2.x:submenu#categories-accesorioscabello"],
     "props": {
-      "blockClass": "categories",
+      "blockClass": ["categories","varios"],
       "itemProps": {
         "text": "Accesorios de Cabello",
         "href": "/accesorios-de-cabello/"

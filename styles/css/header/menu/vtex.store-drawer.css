@@ -84,3 +84,19 @@
   font-size: 0.9375rem;
   font-family: "lab-regular", sans-serif;
 }
+
+.childrenContainer--item-category-mobile
+  :global(.vtex-menu-2-x-styledLinkContainer) {
+  width: 100%;
+  margin: 0;
+  padding: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.childrenContainer--item-category-mobile
+  :global(.vtex-menu-2-x-styledLink) {
+  color: #797878;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "lab-normal", "sans-serif";
+}
+

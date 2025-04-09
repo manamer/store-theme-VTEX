@@ -1,6 +1,6 @@
 {
     "flex-layout.row#categorias-promos-mobile": {
-      "title": "promos",
+      "title": "Promos",
       "children": ["rich-text#title-categoria-promos", "drawer#categoria-promos"],
       "props": {
         "width": "100%",

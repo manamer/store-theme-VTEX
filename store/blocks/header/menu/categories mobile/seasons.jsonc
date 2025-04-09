@@ -32,8 +32,7 @@
     "children": [
       "flex-layout.row#subcategorias-seasons-verano-mobile",
       "flex-layout.row#subcategorias-seasons-invierno-mobile",
-      "flex-layout.row#subcategorias-seasons-regresoaclases-mobile",
-      "flex-layout.row#subcategorias-seasons-organizadores-mobile"
+      "flex-layout.row#subcategorias-seasons-regresoaclases-mobile"
     ],
     "props": { "orientation": "vertical" }
   },

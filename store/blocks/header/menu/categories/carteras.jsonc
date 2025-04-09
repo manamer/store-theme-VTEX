@@ -3,9 +3,9 @@
     "title": "Carteras",
     "blocks": ["vtex.menu@2.x:submenu#categories-carteras"],
     "props": {
-      "blockClass": "categories",
+      "blockClass": ["categories","varios"],
       "itemProps": {
-        "text": "carteras",
+        "text": "Carteras",
         "href": "/carteras"
       }
     }
